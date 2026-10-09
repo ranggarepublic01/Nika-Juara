@@ -104,9 +104,9 @@ td.cues{min-width:260px;font-size:12.5px}
 <header class="top">
   <div class="eyebrow">Nika Music · Album BANGKIT · Single 1</div>
   <h1>JUARA! <span>Lyric Video</span></h1>
-  <div class="facts"><span>Length <b>5:57.6</b></span><span>Artworks <b>10</b></span><span>Segments <b>13</b></span><span>Look <b>illustrated poster / mural</b></span><span>Output <b>16:9, 1080p</b></span><span>Timing <b>final LRC, 9 Oct</b></span></div>
+  <div class="facts"><span>Length <b>5:57.6</b></span><span>Artworks <b>10</b></span><span>Segments <b>13</b></span><span>Veo clips <b>%%NMOTION%%</b></span><span>Look <b>illustrated poster / mural</b></span><span>Output <b>16:9, 1080p</b></span><span>Timing <b>final LRC, 9 Oct</b></span></div>
   <nav class="toc" aria-label="Sections">
-    <a href="#direction">Art direction</a><a href="#workflow">Workflow</a><a href="#characters">Characters</a><a href="#artworks">Artworks</a><a href="#timeline">Edit timeline</a><a href="#animation">Lyric animation</a><a href="#timing">Lyric timing</a><a href="#files">Files</a>
+    <a href="#direction">Art direction</a><a href="#workflow">Workflow</a><a href="#characters">Characters</a><a href="#artworks">Artworks</a><a href="#motion">Motion clips</a><a href="#timeline">Edit timeline</a><a href="#animation">Lyric animation</a><a href="#timing">Lyric timing</a><a href="#files">Files</a>
   </nav>
 </header>
 
@@ -159,7 +159,7 @@ td.cues{min-width:260px;font-size:12.5px}
   <li><b>A2–A10:</b> attach the character sheet first, then A1 as the style reference, then the GBK photo where the card lists one (A2: photo 2, A3: photo 1). For the present-day warung artworks (A7, A9), also attach A4 so the room stays the same.</li>
   <li><b>Check every image</b> for spelling of INDONESIA, a 12 only on the son, stray text, an emblem on the Garuda, helmets, and the GBK details listed under <a href="#gbk">GBK references</a>.</li>
   <li><b>Upscale every artwork to 3840×2160</b> before editing. The edit zooms up to 140%, and a Gemini-size image goes soft at that scale.</li>
-  <li><b>Optional motion:</b> any artwork can become a Veo clip with its motion prompt (first frame = the artwork). Start with the longest holds: A3 (49s), A8 (43s), A10 (59s). Mute the Veo audio.</li>
+  <li><b>Motion clips</b> for the stretches without lyrics: make the close-ups in Gemini, then the Veo clips, from the <a href="#motion">Motion clips</a> section. Mute the Veo audio.</li>
   <li><b>Edit</b> on the Suno track from 0:00.0 using the timeline and lyric spec below. Captions come from <code>lyrics/JUARA_lyric-video.srt</code>.</li>
 </ol>
 
@@ -177,6 +177,25 @@ td.cues{min-width:260px;font-size:12.5px}
 <h2 id="artworks">Artworks</h2>
 <p>Ten artworks in story order. Each card lists every stretch of the song it covers. Copy the prompt into Gemini with the listed attachments.</p>
 %%CARDS%%
+
+<h2 id="motion">Motion clips</h2>
+<p>The lyric stretches stay as stills: the animated words are the motion there. The long stretches without lyrics get %%NMOTION%% different Veo clips, cut every ~10s on the beat. No clip is looped. %%NCLOSE%% of them start from a close-up that Gemini redraws from the artwork. Veo always starts from the full image you give it, and a hand crop of a Gemini image is too small and goes soft in Veo.</p>
+<ul class="rules">
+  <li><b>Step 1, Gemini:</b> attach the artwork (plus the character sheet where listed) and run the close-up prompt. Check it matches the artwork's style before going on.</li>
+  <li><b>Step 2, Veo:</b> the close-up (or the artwork itself) is the first frame. Keep the motion small; big moves can turn the flat style into 3D.</li>
+  <li><b>If a clip drifts in style,</b> use its first frame as a still with a slow 5–8% zoom. It's still a different shot, which is what keeps the stretch alive.</li>
+  <li><b>Speed:</b> clips are 10s; the card says how to fit each one to its slot. Mute every Veo clip.</li>
+</ul>
+<div class="tablewrap"><table>
+<thead><tr><th>Stretch</th><th>Length</th><th>Clips</th></tr></thead>
+<tbody>
+<tr><td class="tcell">0:00.0 – 0:22.3 intro</td><td class="num">22.3s</td><td class="wrapcell">M1, M2 from A1</td></tr>
+<tr><td class="tcell">0:35.7 – 1:24.8 instrumental</td><td class="num">49.1s</td><td class="wrapcell">M3–M6 from A3, then the A3 still from 1:16.0</td></tr>
+<tr><td class="tcell">2:45.6 – 2:55.6 angklung interlude</td><td class="num">10.0s</td><td class="wrapcell">M7 from A2, after the still pull-back from 2:40.0</td></tr>
+<tr><td class="tcell">3:56.2 – 4:26.2 guitar solo, piano</td><td class="num">30.0s</td><td class="wrapcell">M8–M10 from A8</td></tr>
+<tr><td class="tcell">5:39.0 – 5:57.6 outro</td><td class="num">18.6s</td><td class="wrapcell">A10 still: it carries the end card</td></tr>
+</tbody></table></div>
+%%MOTION%%
 
 <h2 id="timeline">Edit timeline</h2>
 <p>Cut points are LRC line starts, rounded to 0.1s. Nudge each cut onto the downbeat just before it by ear (128 bpm, one beat every 0.47s). Hard cuts only. Percentages are scale on a 1920×1080 timeline.</p>

@@ -175,20 +175,54 @@ def art_prompt(a):
 
 # Edit timeline: (start, end, artwork, lyrics summary, move)
 TL = [
- (0.0, 22.3, "A1", "Title · vocalise", "Push 100→112% toward the eagle's head. Red smoke overlay drifting up, soft floodlight flare. Title card 0:01.0–0:10.0."),
+ (0.0, 22.3, "A1", "Title · vocalise", "Veo clips M1 (0:00.0–0:11.1) and M2 (0:11.1–0:22.3). Title card 0:01.0–0:10.0 over M1. If a clip drifts: the still with a push 100→112% toward the eagle's head."),
  (22.3, 35.7, "A2", "Ayo, ayo, Garuda! ×2 · Juara! Juara! · Garuda di dada", "Start at 105% framed on the son. 3% scale pulse on each \"Garuda!\" (0:23.7, 0:27.3) and each \"Juara!\" (0:29.7, 0:31.5); slow upward drift between pulses."),
- (35.7, 84.8, "A3", "(instrumental)", "Move 1, 0:35.7–1:00.0: push 100→115% toward the son. Move 2, 1:00.0–1:24.8: at 115%, slow pan up from the son to the glowing roof and smoke. Facade light flicker overlay. Optional credit card \"NIKA MUSIC · BANGKIT\" 0:40–0:48."),
+ (35.7, 84.8, "A3", "(instrumental)", "Veo clips M3–M6, 0:35.7–1:16.0, a cut every ~10s. 1:16.0–1:24.8: the A3 still, push 100→112%, landing on the downbeat into verse 1. Optional credit card \"NIKA MUSIC · BANGKIT\" 0:40–0:48."),
  (84.8, 102.6, "A4", "Verse 1: Setahun lalu … entah kapan tiba", "Hard cut. Rain overlay. Start at 110% on both of them, push to 118% on Bapak's hands and the scarf by \"melipat syal merahnya\" (1:33.4)."),
  (102.6, 132.2, "A5", "Pre-chorus: Senin malam … Lalu meledak", "Push 100→115% until 1:57.0. 1:57.0–2:04.2: hold, vignette up, background softened (tension). On \"meledak\" (2:04.2): 2-frame white flash, jump to 120%, 4-frame shake, sparks/confetti overlay to 2:12.2."),
  (132.2, 146.7, "A6", "Chorus 1", "Punch scale 108→100% on each \"Juara!\" (2:12.2, 2:13.9, 2:19.4, 2:21.2). Confetti overlay, light flare."),
- (146.7, 175.6, "A2", "Ayo ×4 · angklung interlude", "Start tight at 125% on the son, 3% pulse on each \"Garuda!\" (2:28.1, 2:31.7, 2:35.2, 2:38.7). From 2:40 slow pull back to 100%, fireworks overlay."),
+ (146.7, 175.6, "A2", "Ayo ×4 · angklung interlude", "Start tight at 125% on the son, 3% pulse on each \"Garuda!\" (2:28.1, 2:31.7, 2:35.2, 2:38.7). From 2:40.0 slow pull back, landing on the full frame (100%) at 2:45.6; cut to Veo clip M7 (2:45.6–2:55.6), which starts on that same frame."),
  (175.6, 189.7, "A1", "Verse 2: Gajah Perang … Langit Jakarta merah putih semua", "Start at 118% on the skyline side, slow pan across to the stadium and eagle, ending at 108%."),
  (189.7, 222.8, "A7", "Pre-chorus 2 · Chorus 2", "3:09.7–3:16.5: dark (exposure about −60%, desaturated, slight blur), slow push. On \"meledak\" (3:16.5): flash to full colour, shake. Pulses on each \"Juara!\" (3:28.0, 3:29.8, 3:35.1, 3:36.8); slow push toward Bapak on \"Bilang ke Bapak\" (3:38.6)."),
- (222.8, 266.2, "A8", "Ayo ×4 · guitar solo · piano breakdown", "At 112%, slow drift right to left with a light-streak overlay; pulses on each \"Garuda!\" (3:43.6, 3:47.2, 3:50.6, 3:54.2). When the drums drop out for the piano (around 4:16): slow push to 125% on the son, fireworks overlay fades out, colour cools slightly."),
+ (222.8, 266.2, "A8", "Ayo ×4 · guitar solo · piano breakdown", "3:42.8–3:56.2: the still at 112%, slow drift right to left, light-streak overlay, pulses on each \"Garuda!\" (3:43.6, 3:47.2, 3:50.6, 3:54.2). Then Veo clips M8 (3:56.2–4:06.2), M9 (4:06.2–4:16.2) and M10 (4:16.2–4:26.2); nudge the M10 cut onto the moment the drums drop out for the piano."),
  (266.2, 280.2, "A4", "Bridge: Untuk yang menangis … setia menunggu", "Hard cut back to the rain. Crop to Bapak and the folded scarf only (about 135%), push to 140%. Rain overlay."),
  (280.2, 298.5, "A9", "Bridge: Malam ini kita pulang … akhirnya bahagia", "Push 100→110%, warm glow bloom. Hold still from \"bahagia\" (4:53.0) to the cut."),
  (298.5, SONG_END, "A10", "Final chorus ×2 · Ayo · Asia, kami siap / datang · outro", "4:58.5–5:12.6 wide at 100%, pulses on each \"Juara!\". 5:12.6–5:27.3 at 115% on father and son, pulses. 5:27.3–5:39.0 ease back to 105%; hits on \"Asia\" (5:32.4, 5:36.1). 5:39.0–5:57.6 slow tilt up to the flag; dim to about 50% from 5:42 for the end card."),
 ]
+
+
+# Motion clips: (id, start, end, source artwork, close-up description or None, characters?, extra attach, veo motion)
+CLOSEUP_HEAD = "Using the attached image, show a closer view of the same moment in the same scene: "
+CLOSEUP_TAIL = (" Same night, same characters, same illustration style, palette and texture as the attached image; nothing new added. "
+ "Keep the lower middle of the picture simple. Landscape 16:9. Do not draw any band, bar, box, panel or overlay, and no words, logos, crests or emblems; "
+ "the only lettering allowed is the word INDONESIA on the scarf and the number 12 on the son's jersey.")
+MOTION = [
+ ("M1", 0.0, 11.1, "A1", None, False, "",
+  "The red smoke rises slowly out of the stadium's open roof and curls into the eagle's wings; the wing tips ripple gently; floodlight rays pulse softly; tiny supporters stream across the plaza. The camera holds still."),
+ ("M2", 11.1, 22.3, "A1", "the huge Garuda eagle's head and spread wings above the dark towers, filling most of the frame, the column of red smoke rising into its body from the stadium roof at the bottom of the frame.", False, "",
+  "The eagle's wings lift slowly in one powerful beat and settle; the smoke streams upward into its body; light rays sweep across the sky behind it. The camera holds still."),
+ ("M3", 35.7, 46.0, "A3", None, True, "",
+  "The supporters walk slowly toward the stadium, the big flag ripples, a few fists rise; red smoke drifts above the roof. The camera holds still."),
+ ("M4", 46.0, 56.0, "A3", "the group of supporters carrying the huge plain red-and-white flag between them, filling most of the frame, the stadium facade glowing behind them.", False, "",
+  "The big flag ripples and billows as the supporters carry it slowly forward; red smoke drifts in the background. The camera holds still."),
+ ("M5", 56.0, 66.0, "A3", "the son seen from behind at shoulder height as he walks toward the stadium, the red scarf around his neck with its ends hanging down his back, the large 12 on his back, the glowing stadium facade ahead of him, other supporters simplified at the edges of the frame.", True, "",
+  "He walks slowly forward; the scarf ends sway with each step; the facade lights glow ahead. The camera follows at the same distance and height; it does not rise or tilt."),
+ ("M6", 66.0, 76.0, "A3", "the stadium facade and the edge of the ring roof: the slim white V-braced columns lit warm from within, the pale ribbed roof overhanging above, red flare smoke pouring up over the roof edge into the night sky, a few lamp posts with ring-shaped lamps in front.", False, " + GBK photo 1",
+  "Red smoke pours slowly upward over the roof edge; the facade lights flicker softly; the lamp rings glow. The camera holds still."),
+ ("M7", 165.6, 175.6, "A2", None, True, "",
+  "The raised scarves pump up and down together; flare smoke drifts; a few fireworks burst in the dark sky through the open roof. The camera holds still."),
+ ("M8", 236.2, 246.2, "A8", None, True, "",
+  "The convoy rolls slowly toward the camera, flags waving, the scarf flying; fireworks burst in the sky already in frame; headlight rays flicker. The camera holds still."),
+ ("M9", 246.2, 256.2, "A8", "the sky between the tall glass towers above the avenue filled with red and gold fireworks, the pedestrian bridge crossing below, a few plain red-and-white flags held up from the convoy at the bottom of the frame.", False, "",
+  "Fireworks burst and fade one after another between the towers; the flags wave. The camera holds still."),
+ ("M10", 256.2, 266.2, "A8", "the son from the front, chest-up on his motorbike, helmet on with the visor open, eyes wet and calm, looking ahead toward home, the red scarf around his neck lifting in the wind, the convoy's headlights soft and simplified behind him.", True, "",
+  "He rides steadily; the scarf flutters; headlights slide past behind him; he blinks slowly and a faint smile appears. The camera moves with him at the same distance; it does not rise or tilt."),
+]
+
+def clip_action(d):
+    if d < 9.0: return f"trim to {d:.1f}s at 1.0×"
+    if d <= 11.15: return f"speed {10/d:.2f}×"
+    return f"1.0× + {d-10:.1f}s freeze"
 
 def art_uses(aid):
     return [(s, e) for s, e, a, _, _ in TL if a == aid]
@@ -220,9 +254,28 @@ for a in ART:
 <dl class="meta"><div><dt>On screen</dt><dd>{esc(use_txt)}</dd></div><div><dt>Characters</dt><dd>{esc(who)}</dd></div></dl>
 <div class="attach"><span class="al">Attach</span><span>{attach_html}{order}</span></div>
 {copyblock("img", "Gemini image prompt", art_prompt(a))}
-<details class="veo"><summary>Optional Veo motion prompt</summary>{copyblock("vid", "Veo prompt (first frame = this artwork)", veo + VEO_END)}</details>
+<details class="veo"><summary>Optional Veo motion prompt (for stretches without a motion clip)</summary>{copyblock("vid", "Veo prompt (first frame = this artwork)", veo + VEO_END)}</details>
 <p class="note">{esc(note)}</p>
 </article>''')
+
+
+mcards = []
+for mid, st, en, src, close, chars, extra, veo in MOTION:
+    d = en - st
+    if close:
+        att = f"<b>{src}</b>" + (" + <b>character sheet</b>" if chars else "") + (f" + <b>{esc(extra.strip(' +'))}</b>" if extra else "")
+        step1 = (f'<div class="attach"><span class="al">Step 1 · Gemini</span><span>Attach {att}</span></div>'
+                 + copyblock("img", "Close-up image prompt", CLOSEUP_HEAD + close + CLOSEUP_TAIL))
+        first = f"the {mid} close-up from step 1"
+    else:
+        step1 = ""
+        first = f"{src} itself, full frame"
+    mcards.append(f"""<article class="sc mo" id="{mid.lower()}">
+<header class="sch"><span class="badge">{mid}</span><span class="tc">{fmt(st)} – {fmt(en)}</span><span class="dur">{d:.1f}s · {clip_action(d)}</span><span class="tag">from {src}</span></header>
+{step1}
+<div class="attach"><span class="al">{'Step 2 · ' if close else ''}Veo</span><span>First frame: <b>{esc(first)}</b></span></div>
+{copyblock("vid", "Veo prompt", veo + VEO_END)}
+</article>""")
 
 rows = []
 for s, e, a, lyr, move in TL:
@@ -247,6 +300,8 @@ page = (Path(__file__).with_name("lyric_template.html").read_text(encoding="utf-
   .replace("%%CONS%%", cons)
   .replace("%%GBK%%", gbk)
   .replace("%%CARDS%%", "\n".join(cards))
+  .replace("%%MOTION%%", "\n".join(mcards))
+  .replace("%%NMOTION%%", str(len(MOTION))).replace("%%NCLOSE%%", str(sum(1 for m in MOTION if m[4])))
   .replace("%%ROWS%%", "\n".join(rows))
   .replace("%%LROWS%%", "\n".join(lrows))
   .replace("%%NCUES%%", str(len(CUES))))
@@ -258,4 +313,8 @@ for (s1, e1, *_), (s2, *_) in zip(TL, TL[1:]):
 assert TL[0][0] == 0 and TL[-1][1] == SONG_END
 for _, a, b, *_ in CUES:
     assert b > a, (a, b)
+for mid, st, en, src, *_ in MOTION:
+    assert any(a == src and s0 - 1e-6 <= st and en <= e0 + 1e-6 for s0, e0, a, *_ in TL), mid
+for a_, b_ in zip(MOTION, MOTION[1:]):
+    assert a_[2] <= b_[1] + 1e-6, (a_[0], b_[0])
 print(len(ART), "artworks,", len(TL), "segments,", len(CUES), "lyric cues,", len(page), "bytes")
