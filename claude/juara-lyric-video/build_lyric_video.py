@@ -104,13 +104,13 @@ def expand(t):
         t = t.replace("{" + k + "}", v)
     return t
 
-SHEET = ("Match the illustration style, palette and texture of the attached style reference exactly. Character reference sheet on a plain warm off-white paper background, no text labels: "
+SHEET = ("(SHEET) Match the illustration style, palette and texture of the attached style reference exactly. Character reference sheet on a plain warm off-white paper background, no text labels: "
  "left, " + L["SON"] + ", full body front view and back view, wearing " + L["SCARF"] + " around his neck; "
  "centre-left, " + L["SON_PAST"] + ", full body front view; "
  "centre-right, " + L["BAPAK"] + ", full body front view and a head-and-shoulders close-up; "
  "right, " + L["SCARF"] + ", laid flat. " + STYLE)
 
-SHEET_EDIT = ("Edit the attached character sheet. Change only the son's red jersey in his front view and back view: make it " +
+SHEET_EDIT = ("(SHEET-EDIT) Edit the attached character sheet. Change only the son's red jersey in his front view and back view: make it " +
  "a bright red replica Indonesia home supporter jersey with fine darker-red horizontal pinstripes, raglan sleeves, a white ribbed V-neck collar and white ribbed sleeve cuffs, and white horizontal brush-stroke streaks of different lengths sweeping across the front from below the chest down to the hem; a white number 12 in the centre of the chest above the streaks and a large white number 12 on the plain red back; no crest, no badge, no maker's logo and no other text. Keep everything else exactly the same: his face, hair, pose, the red scarf around his neck, his black jeans, " +
  "the grey T-shirt figure, Bapak, the flat scarf, the background, the palette and the illustration style. No other text.")
 LOOK_PAST = "Palette for this artwork only: cold blue-grey and indigo, everything desaturated, the red scarf the only warm colour in the frame."
@@ -171,7 +171,7 @@ def art_prompt(a):
     pre = "" if aid == "A1" else (PREFIX_CH if chars else PREFIX_ST) + " "
     if "GBK photo" in attach:
         pre += PHOTO_NOTE + " "
-    return pre + expand(body) + (" " + look if look else "") + " " + COMPOSE + " " + STYLE
+    return f"({aid}) " + pre + expand(body) + (" " + look if look else "") + " " + COMPOSE + " " + STYLE
 
 # Edit timeline: (start, end, artwork, lyrics summary, move)
 TL = [
@@ -206,7 +206,7 @@ MOTION = [
  ("M4", 46.0, 56.0, "A3", "the group of supporters carrying the huge plain red-and-white flag between them, filling most of the frame, the stadium facade glowing behind them.", False, "",
   "The big flag ripples and billows as the supporters carry it slowly forward; red smoke drifts in the background. The camera holds still."),
  ("M5", 56.0, 66.0, "A3", "the son seen from behind at shoulder height as he walks toward the stadium, the red scarf around his neck with its ends hanging down his back, the large 12 on his back, the glowing stadium facade ahead of him, other supporters simplified at the edges of the frame.", True, "",
-  "He walks slowly forward; the scarf ends sway with each step; the facade lights glow ahead. The camera follows at the same distance and height; it does not rise or tilt."),
+  "He walks slowly away from the camera toward the stadium; the scarf ends sway gently; the facade lights glow ahead. The camera holds still."),
  ("M6", 66.0, 76.0, "A3", "the stadium facade and the edge of the ring roof: the slim white V-braced columns lit warm from within, the pale ribbed roof overhanging above, red flare smoke pouring up over the roof edge into the night sky, a few lamp posts with ring-shaped lamps in front.", False, " + GBK photo 1",
   "Red smoke pours slowly upward over the roof edge; the facade lights flicker softly; the lamp rings glow. The camera holds still."),
  ("M7", 165.6, 175.6, "A2", None, True, "",
@@ -218,6 +218,10 @@ MOTION = [
  ("M10", 256.2, 266.2, "A8", "the son from the front, chest-up on his motorbike, helmet on with the visor open, eyes wet and calm, looking ahead toward home, the red scarf around his neck lifting in the wind, the convoy's headlights soft and simplified behind him.", True, "",
   "He rides steadily; the scarf flutters; headlights slide past behind him; he blinks slowly and a faint smile appears. The camera moves with him at the same distance; it does not rise or tilt."),
 ]
+
+MNOTE = {
+ "M5": "Veo refused this clip on 9 Oct with the first version of the prompt (camera following him). This version keeps the camera still. If it is refused again, the trigger is probably the image: redo the close-up adding \"no smoke, only a few people around him\" and try again. If that fails too, use the close-up as a still with a slow zoom.",
+}
 
 def clip_action(d):
     if d < 9.0: return f"trim to {d:.1f}s at 1.0×"
@@ -254,7 +258,7 @@ for a in ART:
 <dl class="meta"><div><dt>On screen</dt><dd>{esc(use_txt)}</dd></div><div><dt>Characters</dt><dd>{esc(who)}</dd></div></dl>
 <div class="attach"><span class="al">Attach</span><span>{attach_html}{order}</span></div>
 {copyblock("img", "Gemini image prompt", art_prompt(a))}
-<details class="veo"><summary>Optional Veo motion prompt (for stretches without a motion clip)</summary>{copyblock("vid", "Veo prompt (first frame = this artwork)", veo + VEO_END)}</details>
+<details class="veo"><summary>Optional Veo motion prompt (for stretches without a motion clip)</summary>{copyblock("vid", "Veo prompt (first frame = this artwork)", f"({aid}-VEO) " + veo + VEO_END)}</details>
 <p class="note">{esc(note)}</p>
 </article>''')
 
@@ -265,7 +269,7 @@ for mid, st, en, src, close, chars, extra, veo in MOTION:
     if close:
         att = f"<b>{src}</b>" + (" + <b>character sheet</b>" if chars else "") + (f" + <b>{esc(extra.strip(' +'))}</b>" if extra else "")
         step1 = (f'<div class="attach"><span class="al">Step 1 · Gemini</span><span>Attach {att}</span></div>'
-                 + copyblock("img", "Close-up image prompt", CLOSEUP_HEAD + close + CLOSEUP_TAIL))
+                 + copyblock("img", "Close-up image prompt", f"({mid}-IMG) " + CLOSEUP_HEAD + close + CLOSEUP_TAIL))
         first = f"the {mid} close-up from step 1"
     else:
         step1 = ""
@@ -274,7 +278,8 @@ for mid, st, en, src, close, chars, extra, veo in MOTION:
 <header class="sch"><span class="badge">{mid}</span><span class="tc">{fmt(st)} – {fmt(en)}</span><span class="dur">{d:.1f}s · {clip_action(d)}</span><span class="tag">from {src}</span></header>
 {step1}
 <div class="attach"><span class="al">{'Step 2 · ' if close else ''}Veo</span><span>First frame: <b>{esc(first)}</b></span></div>
-{copyblock("vid", "Veo prompt", veo + VEO_END)}
+{copyblock("vid", "Veo prompt", f"({mid}-VEO) " + veo + VEO_END)}
+{f'<p class="note">{esc(MNOTE[mid])}</p>' if mid in MNOTE else ''}
 </article>""")
 
 rows = []

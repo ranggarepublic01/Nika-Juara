@@ -121,6 +121,8 @@ td.cues{min-width:260px;font-size:12.5px}
   <div style="--c:var(--sw-gold)"><i></i><span>Gold <code>#F2B33D</code></span></div>
   <div style="--c:var(--sw-blue)"><i></i><span>Flashback blue-grey <code>#8FA3B8</code></span></div>
 </div>
+<h4>Prompt codes</h4>
+<p>Every prompt starts with a code in brackets so each output can be matched to its prompt: <code>(A1)</code>–<code>(A10)</code> for artworks, <code>(M5-IMG)</code> and <code>(M5-VEO)</code> for a motion clip's close-up and Veo steps, <code>(A3-VEO)</code> for an artwork's optional motion, and <code>(SHEET)</code> / <code>(SHEET-EDIT)</code> for the character sheet. Name the saved files the same way. If the image model draws the code as text, delete it from that prompt and regenerate.</p>
 <h4>Rules</h4>
 <ul class="rules">
   <li><b>No players at all.</b> The supporters carry the whole video, so no silhouette can point at a real player, and there is no trophy to get wrong.</li>
@@ -185,6 +187,7 @@ td.cues{min-width:260px;font-size:12.5px}
   <li><b>Step 2, Veo:</b> the close-up (or the artwork itself) is the first frame. Keep the motion small; big moves can turn the flat style into 3D.</li>
   <li><b>If a clip drifts in style,</b> use its first frame as a still with a slow 5–8% zoom. It's still a different shot, which is what keeps the stretch alive.</li>
   <li><b>Speed:</b> clips are 10s; the card says how to fit each one to its slot. Mute every Veo clip.</li>
+  <li><b>"I can't generate that video":</b> retry once as it is, since refusals are sometimes random. Then make the motion smaller (camera holds still, nobody followed). Then redo the first frame with fewer people and no smoke, because the image is the usual trigger. Last resort: the first frame as a still.</li>
 </ul>
 <div class="tablewrap"><table>
 <thead><tr><th>Stretch</th><th>Length</th><th>Clips</th></tr></thead>
