@@ -85,6 +85,13 @@ L = {
  "SCARF": "the red scarf: an old knitted football supporter scarf in deep flag red, slightly faded, with the word INDONESIA knitted in bold white block capitals along its length, a white band with two thin red stripes near each end, and white tassels, no logos",
  "NEIGH": "kampung neighbours: ordinary Indonesian residents of mixed ages in everyday clothes, men in T-shirts and sarongs, two women in headscarves, a few children, some with plain red-and-white accessories",
 }
+GBK = {
+ "GBK_EXT": "Gelora Bung Karno Main Stadium in Jakarta, matching the attached photo: a wide, low oval bowl under one continuous ring-shaped roof made of many narrow radial ribbed panels in pale silver-grey that slope gently outward to a thin overhanging edge, leaving a large open oval in the centre lined with a white steel lattice ring; under the roof edge, a facade of slim white concrete columns in a repeating pattern of diagonal V-shaped braces over four horizontal floor bands, with dark openings between them; a wide paved plaza around the bowl with tall lamp posts topped by ring-shaped lamps; dense tropical trees around the plaza; a tight cluster of tall glass office towers of the Sudirman business district standing directly behind the stadium",
+ "GBK_IN": "inside Gelora Bung Karno Main Stadium, matching the attached photo: a steep oval bowl with two tiers of seats laid out in big blocks of red, white and grey that form a red-and-white flag pattern around the bowl; a red-orange athletics running track with white lane lines circling a bright striped green pitch; the underside of the ring roof showing a web of radial steel trusses, with a white steel lattice ring and floodlights along its inner edge; the open oval in the centre of the roof showing the sky, with a few tall towers rising beyond the far rim",
+}
+GBK_NAMES = {"GBK_EXT": "GBK outside (with photo 1)", "GBK_IN": "GBK inside (with photo 2)"}
+PHOTO_NOTE = "The attached photo of the stadium is only an architecture reference: copy its shape and structure, not its daylight, colours or photographic look; it is night in this artwork."
+
 NAMES = {"SON": "Son", "SON_PAST": "Son (one year earlier)", "BAPAK": "Bapak", "SCARF": "Red scarf", "NEIGH": "Neighbours"}
 SHORT = {"SON": "the son", "SON_PAST": "the son one year earlier", "BAPAK": "Bapak", "SCARF": "the red scarf", "NEIGH": "kampung neighbours"}
 
@@ -92,6 +99,8 @@ def expand(t):
     for k, v in L.items():
         d = v.split(": ", 1)[1]
         t = t.replace("{" + k + "}", f"{SHORT[k]} ({d})")
+    for k, v in GBK.items():
+        t = t.replace("{" + k + "}", v)
     return t
 
 SHEET = ("Character reference sheet on a plain warm off-white paper background, in the illustration style described below, no text labels: "
@@ -108,28 +117,28 @@ VEO_END = " One continuous shot with no cuts. Keep the illustration style, chara
 
 # Artworks: id, title, chars, attach, body, extra look, veo motion, note
 ART = [
- ("A1", "Garuda over the ring", [], "your real GBK photo",
-  "Match the stadium's shape to the attached photo, redrawn in the illustration style below. A huge stylised Garuda eagle with wings spread wide fills the night sky above Gelora Bung Karno stadium in Jakarta, seen from a distance and slightly above: the oval stadium is crowned by one continuous ring-shaped roof that circles the whole bowl and leaves the centre open to the sky, glowing red and white from inside; red flare smoke rises from the open centre and curls upward into the eagle's wings. The eagle is built from flat red, gold and white shapes, facing left, beak open; it is a mythical bird, not the national coat of arms: no shield on its chest, no emblem, no banner. The glass towers of the Sudirman skyline stand behind as flat indigo silhouettes; the plaza around the stadium sits in dark shadow.",
+ ("A1", "Garuda over the ring", [], "GBK photo 1 (aerial, outside)",
+  "Redraw the stadium in the attached photo in the illustration style below, from the same raised viewpoint to one side, at night. {GBK_EXT}. The open oval in the centre glows red and white from the floodlights inside; red flare smoke rises out of it and curls upward into the wings of a huge stylised Garuda eagle that spreads across the night sky above the stadium, in front of the towers. The eagle is built from flat red, gold and white shapes, facing left, beak open; it is a mythical bird, not the national coat of arms: no shield on its chest, no emblem, no banner. The towers are flat indigo silhouettes with a few lit windows. The facade glows softly but stays darker than the roof and the sky; the plaza and trees below are in deep shadow, dotted with tiny supporters in red.",
   "", "The red smoke drifts slowly upward and the eagle's wing tips ripple gently; floodlight rays pulse softly. The camera holds still.",
-  "Style anchor. Make this one first; it is attached to every artwork after it."),
- ("A2", "Wall of scarves", ["SON", "SCARF"], "Character sheet + A1",
-  "High in a packed stand inside the stadium at night, the camera just behind and above the supporters, looking down across their backs toward the bright green pitch far below and the far stand beyond: rows of supporters in red and white seen from behind, every one holding a red-and-white scarf stretched taut above their head with both arms; the far stand is a solid wall of flat red and white shapes under the curved edge of the ring roof, its floodlights drawn as white starbursts; red flare smoke in flat curling shapes. In the nearest row, in the centre of the frame, {SON} is seen from behind holding {SCARF} up in both fists, the large 12 on his back. No face is visible; everyone faces the pitch.",
+  "Style anchor. Make this one first; it is attached to every artwork after it. Check the roof: radial ribs, thin outer edge, open oval centre, towers directly behind."),
+ ("A2", "Wall of scarves", ["SON", "SCARF"], "Character sheet + A1 + GBK photo 2 (inside the bowl)",
+  "High in the upper tier at night, the camera just behind and above the supporters, looking down across their backs toward the pitch and the far stand, {GBK_IN}. Rows of supporters in red and white seen from behind, every one holding a red-and-white scarf stretched taut above their head with both arms; the far stand is packed and its scarves are raised too; the floodlights on the roof's inner edge are drawn as white starbursts and the sky through the open oval is dark night; red flare smoke in flat curling shapes. In the nearest row, in the centre of the frame, {SON} is seen from behind holding {SCARF} up in both fists, the large 12 on his back. No face is visible; everyone faces the pitch.",
   "", "The raised scarves pump up and down together; flare smoke drifts. The camera holds still.",
-  "Used twice: the opening chant and the post-chorus chant."),
- ("A3", "The walk to GBK", ["SON", "SCARF"], "Character sheet + A1",
-  "At ground level on the wide stadium plaza at night, the camera a few steps behind {SON}, who walks away from us toward the glowing stadium, {SCARF} around his neck with its ends hanging down his back, the large 12 on his back; around him a river of supporters in red and white walks the same way, some carrying a huge plain red-and-white flag between them, some raising fists. Lamp posts and tall trees line the plaza as flat silhouettes. Ahead, the stadium facade of tall slim vertical white panels lit from within, the ring roof glowing above it, red smoke rising into the night sky.",
+  "Used twice: the opening chant and the post-chorus chant. Check the red-orange track around the pitch and the red, white and grey seat blocks."),
+ ("A3", "The walk to GBK", ["SON", "SCARF"], "Character sheet + A1 + GBK photo 1 (aerial, outside)",
+  "At ground level on the wide stadium plaza at night, the camera a few steps behind {SON}, who walks away from us toward the glowing stadium, {SCARF} around his neck with its ends hanging down his back, the large 12 on his back; around him a river of supporters in red and white walks the same way, some carrying a huge plain red-and-white flag between them, some raising fists. Ahead, the stadium from the attached photo seen from the plaza at ground level: the facade of slim white concrete columns with diagonal V-shaped braces over four floor bands, lit warm white from within; the pale ribbed ring roof overhanging above it with its thin edge, red smoke rising from the open centre into the night sky; tall lamp posts with ring-shaped lamps and dark tropical trees along the plaza; the Sudirman towers rising behind the roof as indigo silhouettes.",
   "", "The supporters walk slowly forward and the big flag ripples; the camera follows at walking pace at the same height and does not rise or tilt.",
-  "Carries the 49-second instrumental, so it gets two camera moves in the edit."),
+  "Carries the 49-second instrumental, so it gets two camera moves in the edit. Check the V-braced columns under the roof edge."),
  ("A4", "A year ago", ["BAPAK", "SON_PAST", "SCARF"], "Character sheet + A1",
   "Night in heavy rain, inside a small roadside warung kopi on a narrow Jakarta kampung street, the camera at the back wall beside the switched-off TV, looking out toward the open front and the street: {BAPAK} sits on the front wooden bench facing us, slowly folding {SCARF} on his lap, the INDONESIA lettering showing on the fold, his eyes on the scarf; beside him {SON_PAST} sits with his head lowered and his elbows on his knees. Behind them the blue tarpaulin awning streams with rain and the wet street shines under one street lamp. The wooden counter with glass jars of snacks runs along the left side; one white fluorescent tube hangs under the awning; the dark side edge of the TV on its shelf is just visible at the far left edge of the frame.",
   LOOK_PAST, "Rain streams off the awning; Bapak's hands slowly fold the scarf once more. The camera holds still.",
   "Flashback. Used twice: verse 1 and the start of the bridge."),
  ("A5", "The same scarf", ["SON", "SCARF"], "Character sheet + A1",
-  "{SON} stands in his row in the packed stand facing us, holding {SCARF} stretched between his fists high above his head, the INDONESIA lettering facing us, his eyes lifted to it, jaw set. Behind him the rows of the stand rise away as flat abstract shapes of red and white supporters and warm red flare glow, with no readable architecture. A few supporters at the edges of the frame, cut off and simplified, look the same way he does.",
+  "{SON} stands in his row in the packed stand facing us, holding {SCARF} stretched between his fists high above his head, the INDONESIA lettering facing us, his eyes lifted to it, jaw set. Behind him the rows of the stand rise away as flat abstract shapes: red, white and grey seat blocks, red and white supporters and warm red flare glow, with no readable architecture. A few supporters at the edges of the frame, cut off and simplified, look the same way he does.",
   "", "The scarf trembles slightly in his fists; the flare glow behind him flickers. The camera holds still.",
   "Pre-chorus. The edit builds tension on it, then breaks on \"meledak\"."),
  ("A6", "JUARA!", ["SON", "SCARF"], "Character sheet + A1",
-  "{SON} mid-jump in the stand facing us, mouth wide open in a shout of joy, his right fist thumped against his chest over the small 12, his left fist raised high swinging {SCARF}; around him supporters leap with arms up, simplified and partly cut off by the frame; above them in the night sky at the top of the frame, fireworks burst in flat red and gold starbursts and red-and-white confetti falls.",
+  "{SON} mid-jump in the stand facing us, mouth wide open in a shout of joy, his right fist thumped against his chest over the small 12, his left fist raised high swinging {SCARF}; around him supporters leap with arms up, simplified and partly cut off by the frame, against flat blocks of red, white and grey seats; above them in the night sky at the top of the frame, fireworks burst in flat red and gold starbursts and red-and-white confetti falls.",
   "", "Confetti falls and fireworks burst in the sky; the scarf swings. The camera holds still.",
   "First chorus. The chest thump sits on \"Garuda di dada\"."),
  ("A7", "The warung erupts", ["BAPAK", "NEIGH"], "Character sheet + A1 + A4",
@@ -156,6 +165,8 @@ ART_BY = {a[0]: a for a in ART}
 def art_prompt(a):
     aid, title, chars, attach, body, look, veo, note = a
     pre = "" if aid == "A1" else (PREFIX_CH if chars else PREFIX_ST) + " "
+    if "GBK photo" in attach:
+        pre += PHOTO_NOTE + " "
     return pre + expand(body) + (" " + look if look else "") + " " + COMPOSE + " " + STYLE
 
 # Edit timeline: (start, end, artwork, lyrics summary, move)
@@ -197,6 +208,7 @@ for a in ART:
     past = " look-past" if look == LOOK_PAST else ""
     attach_html = " + ".join(f"<b>{esc(x.strip())}</b>" for x in attach.split("+"))
     order = " — character sheet first" if chars else ""
+    if "GBK photo" in attach and chars: order = " — character sheet, then A1 (style), then the GBK photo (architecture)"
     if "A4" in attach: order = " — character sheet, then A1 (style), then A4 (room)"
     cards.append(f'''<article class="sc{past}" id="{aid.lower()}">
 <header class="sch"><span class="badge">{aid}</span><h3>{esc(title)}</h3><span class="dur">{total:.1f}s on screen</span></header>
@@ -221,12 +233,14 @@ for j, (n, a, b, t, k, words) in enumerate(CUES, 1):
                  f'<td><span class="k k-{k}">{KIND_NAME[k]}</span></td><td class="wrapcell">{esc(t)}</td><td class="wrapcell cues">{wt}</td></tr>')
 
 cons = "\n".join(copyblock("con", NAMES[k], L[k]) for k in L)
+gbk = "\n".join(copyblock("con", GBK_NAMES[k], v) for k, v in GBK.items())
 
 page = (Path(__file__).with_name("lyric_template.html").read_text(encoding="utf-8")
   .replace("%%STYLE%%", copyblock("con", "Style line (already inside every prompt)", STYLE))
   .replace("%%COMPOSE%%", copyblock("con", "Composition line (already inside every prompt)", COMPOSE))
   .replace("%%SHEET%%", copyblock("plate", "Character sheet (illustrated)", SHEET))
   .replace("%%CONS%%", cons)
+  .replace("%%GBK%%", gbk)
   .replace("%%CARDS%%", "\n".join(cards))
   .replace("%%ROWS%%", "\n".join(rows))
   .replace("%%LROWS%%", "\n".join(lrows))
