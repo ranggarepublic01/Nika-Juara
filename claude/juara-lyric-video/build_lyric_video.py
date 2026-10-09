@@ -79,7 +79,7 @@ COMPOSE = ("Keep the main subject inside the centre third of the width. Keep a c
  "frame (from about 55% to 85% of the height) with no faces or important detail, for big lyric text.")
 
 L = {
- "SON": "the son: an Indonesian man about 28 years old, slim athletic build, warm brown skin, short black hair cut close at the sides, clean-shaven, a small dark mole on his right cheek, wearing a plain bright red football supporter jersey with a white V-neck collar and white sleeve cuffs, a white number 12 in the centre of the chest and a large white number 12 on the back, no logo and no other text, and black jeans",
+ "SON": "the son: an Indonesian man about 28 years old, slim athletic build, warm brown skin, short black hair cut close at the sides, clean-shaven, a small dark mole on his right cheek, wearing a bright red replica Indonesia home supporter jersey with fine darker-red horizontal pinstripes, raglan sleeves, a white ribbed V-neck collar and white ribbed sleeve cuffs, and white horizontal brush-stroke streaks of different lengths sweeping across the front from below the chest down to the hem; a white number 12 in the centre of the chest above the streaks and a large white number 12 on the plain red back; no crest, no badge, no maker's logo and no other text; and black jeans",
  "SON_PAST": "the son one year earlier: the same Indonesian man about 28 years old, short black hair, a small dark mole on his right cheek, wearing a plain grey T-shirt and black jeans",
  "BAPAK": "Bapak: an Indonesian man about 62 years old, slim, warm brown weathered skin, short grey hair thinning at the front, a neat grey moustache, deep smile lines, thin black-rimmed glasses, wearing a faded light-blue short-sleeved button shirt over a white undershirt and dark grey trousers",
  "SCARF": "the red scarf: an old knitted football supporter scarf in deep flag red, slightly faded, with the word INDONESIA knitted in bold white block capitals along its length, a white band with two thin red stripes near each end, and white tassels, no logos",
@@ -109,6 +109,9 @@ SHEET = ("Match the illustration style, palette and texture of the attached styl
  "centre-right, " + L["BAPAK"] + ", full body front view and a head-and-shoulders close-up; "
  "right, " + L["SCARF"] + ", laid flat. " + STYLE)
 
+SHEET_EDIT = ("Edit the attached character sheet. Change only the son's red jersey in his front view and back view: make it " +
+ "a bright red replica Indonesia home supporter jersey with fine darker-red horizontal pinstripes, raglan sleeves, a white ribbed V-neck collar and white ribbed sleeve cuffs, and white horizontal brush-stroke streaks of different lengths sweeping across the front from below the chest down to the hem; a white number 12 in the centre of the chest above the streaks and a large white number 12 on the plain red back; no crest, no badge, no maker's logo and no other text. Keep everything else exactly the same: his face, hair, pose, the red scarf around his neck, his black jeans, " +
+ "the grey T-shirt figure, Bapak, the flat scarf, the background, the palette and the illustration style. No other text.")
 LOOK_PAST = "Palette for this artwork only: cold blue-grey and indigo, everything desaturated, the red scarf the only warm colour in the frame."
 
 PREFIX_CH = "Match all characters exactly to the attached character sheet, and match the illustration style, palette and texture of the attached style reference exactly."
@@ -239,6 +242,7 @@ page = (Path(__file__).with_name("lyric_template.html").read_text(encoding="utf-
   .replace("%%STYLE%%", copyblock("con", "Style line (already inside every prompt)", STYLE))
   .replace("%%COMPOSE%%", copyblock("con", "Composition line (already inside every prompt)", COMPOSE))
   .replace("%%SHEET%%", copyblock("plate", "Character sheet (illustrated)", SHEET))
+  .replace("%%SHEETEDIT%%", copyblock("plate", "Jersey update: edit the approved sheet", SHEET_EDIT))
   .replace("%%CONS%%", cons)
   .replace("%%GBK%%", gbk)
   .replace("%%CARDS%%", "\n".join(cards))
