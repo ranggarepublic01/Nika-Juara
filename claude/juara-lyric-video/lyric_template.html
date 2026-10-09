@@ -153,8 +153,9 @@ td.cues{min-width:260px;font-size:12.5px}
 
 <h2 id="workflow">Workflow</h2>
 <ol class="steps">
-  <li><b>Character sheet</b> (attach nothing). Regenerate until the son, Bapak and the scarf look right, with INDONESIA spelled correctly.</li>
   <li><b>A1 with GBK photo 1 attached.</b> This is the style anchor: iterate on it until the style is what you want, because every other artwork copies it.</li>
+  <li><b>Pick one image model and keep it for all ten artworks and the character sheet.</b> GPT and Gemini draw the same prompt in clearly different styles, so mixing them breaks the set.</li>
+  <li><b>Character sheet with A1 attached</b> as the style reference. Regenerate until the son, Bapak and the scarf look right, with INDONESIA spelled correctly.</li>
   <li><b>A2–A10:</b> attach the character sheet first, then A1 as the style reference, then the GBK photo where the card lists one (A2: photo 2, A3: photo 1). For the present-day warung artworks (A7, A9), also attach A4 so the room stays the same.</li>
   <li><b>Check every image</b> for spelling of INDONESIA, a 12 only on the son, stray text, an emblem on the Garuda, helmets, and the GBK details listed under <a href="#gbk">GBK references</a>.</li>
   <li><b>Upscale every artwork to 3840×2160</b> before editing. The edit zooms up to 140%, and a Gemini-size image goes soft at that scale.</li>
@@ -164,7 +165,7 @@ td.cues{min-width:260px;font-size:12.5px}
 
 <h2 id="characters">Characters</h2>
 <p>Shorter than the photoreal lines, since the style simplifies faces. These are already inside the artwork prompts.</p>
-<div class="attach"><span class="al">Attach</span><span><b>nothing</b></span></div>
+<div class="attach"><span class="al">Attach</span><span><b>A1</b> (style reference)</span></div>
 %%SHEET%%
 %%CONS%%
 
@@ -196,6 +197,7 @@ td.cues{min-width:260px;font-size:12.5px}
 </tbody></table></div>
 <h4>Over the whole video</h4>
 <ul class="rules">
+  <li><b>Text over busy art:</b> where a line sits over detail (the A1 facade, crowds), put a soft charcoal gradient behind the lower band, about 60% at the bottom fading to 0, instead of shrinking the text.</li>
   <li><b>Paper grain:</b> one grain or paper-texture overlay across the whole video at 10–15% opacity, so the artworks and the text read as one print.</li>
   <li><b>Rain</b> overlay on both A4 stretches. <b>Confetti or sparks</b> on the chorus stretches. <b>Light flares</b> on floodlights and fireworks.</li>
   <li><b>Audio:</b> the Suno track only, full volume. No sound effects.</li>

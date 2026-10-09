@@ -103,7 +103,7 @@ def expand(t):
         t = t.replace("{" + k + "}", v)
     return t
 
-SHEET = ("Character reference sheet on a plain warm off-white paper background, in the illustration style described below, no text labels: "
+SHEET = ("Match the illustration style, palette and texture of the attached style reference exactly. Character reference sheet on a plain warm off-white paper background, no text labels: "
  "left, " + L["SON"] + ", full body front view and back view, wearing " + L["SCARF"] + " around his neck; "
  "centre-left, " + L["SON_PAST"] + ", full body front view; "
  "centre-right, " + L["BAPAK"] + ", full body front view and a head-and-shoulders close-up; "
