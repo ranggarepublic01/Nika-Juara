@@ -20,10 +20,10 @@ W, H, FPS = R.W, R.H, R.FPS
 # (number, start, end, hook line)
 SHORTS = [
  (1, 14.0, 35.6, "INDONESIA JUARA ASEAN 2026!"),
- (2, 84.6, 132.1, "Setahun lalu, TV-nya kita matikan..."),
+ (2, 84.8, 132.1, "Setahun lalu, TV-nya kita matikan..."),
  (3, 123.6, 161.0, "Detik terakhir di GBK..."),
- (4, 175.4, 222.6, "Sementara itu, di warung kampung..."),
- (5, 266.0, 312.4, "Syal merah Bapak akhirnya pulang"),
+ (4, 175.6, 222.6, "Sementara itu, di warung kampung..."),
+ (5, 266.2, 312.4, "Syal merah Bapak akhirnya pulang"),
  (6, 312.4, 346.0, "Berikutnya: Piala Asia 2027"),
 ]
 CTA = "Lagu lengkap di channel Nika Music"
