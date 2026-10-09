@@ -141,3 +141,11 @@ Make it in Gemini with the character sheet and A1 attached (character sheet firs
 For a second version, swap "BILANG KE BAPAK" for "PIALA ASEAN 2026" (in both places in the prompt) and compare the two at small size.
 
 If a letter comes out wrong, ask Gemini to fix only that word in the same image instead of regenerating. Export at 1280×720, JPG under 2 MB.
+
+### Thumbnail fix: jersey pattern
+
+If the jersey comes out plain, edit the thumbnail in Gemini (attach the thumbnail first, then the character sheet):
+
+```
+(THUMB-EDIT) Edit the first attached image. Change only the son's red jersey so it matches the jersey on the attached character sheet: bright red with fine darker-red horizontal pinstripes, a white ribbed V-neck collar and white ribbed sleeve cuffs, and bold white horizontal brush-stroke streaks of different lengths sweeping across the front of the shirt from below the chest down to the hem, clearly visible around and below his fist. No crest, no badge, no maker's logo and no number on the front. Keep everything else exactly the same: his face, pose, hands and scarf, the Garuda, the stadium, the fireworks, the text "JUARA!" and "BILANG KE BAPAK" with the same spelling, size and position, the colours and the illustration style.
+```
