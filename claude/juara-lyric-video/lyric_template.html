@@ -1,0 +1,229 @@
+<title>JUARA! Lyric Video Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a production sheet in the same family as the Scene Breakdown: one reading column, artwork cards, then edit and lyric tables */
+:root{
+  --bg:#F6F4F4; --surface:#FFFFFF; --fg:#1C1617; --muted:#6A5E60; --line:#E3DADB;
+  --red:#C8102E; --red-soft:#F9E3E6;
+  --img-bg:#FFF5D2; --img-line:#E2BE3E; --vid-bg:#FFE8D6; --vid-line:#E98236;
+  --con-bg:#EEF0F2; --con-line:#C9CED4;
+  --past:#4F6C86; --gold:#A8740C;
+  --sw-red:#C8102E; --sw-off:#F4EFE6; --sw-ind:#1E2240; --sw-char:#1A1416; --sw-gold:#F2B33D; --sw-blue:#8FA3B8;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --poster:"Anton","Impact","Arial Narrow",sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141011; --surface:#1D1819; --fg:#F1EBEB; --muted:#ADA0A2; --line:#352D2E;
+  --red:#FF5468; --red-soft:#3A1B20;
+  --img-bg:#2B2510; --img-line:#8C7420; --vid-bg:#2F1E10; --vid-line:#9A5420;
+  --con-bg:#1F2326; --con-line:#3A4147; --past:#8FB0CC; --gold:#E8B04A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141011; --surface:#1D1819; --fg:#F1EBEB; --muted:#ADA0A2; --line:#352D2E;
+  --red:#FF5468; --red-soft:#3A1B20;
+  --img-bg:#2B2510; --img-line:#8C7420; --vid-bg:#2F1E10; --vid-line:#9A5420;
+  --con-bg:#1F2326; --con-line:#3A4147; --past:#8FB0CC; --gold:#E8B04A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--body);padding-inline:16px;padding-block:0 64px}
+.wrap{max-width:900px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.05;margin:0}
+h1{font-size:clamp(44px,9vw,76px);letter-spacing:.01em}
+h1 span{color:var(--red)}
+h2{font-size:34px;margin-top:56px;padding-top:14px;border-top:3px solid var(--fg)}
+h3{font-size:24px}
+h4{font:600 12px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:24px 0 6px}
+p{margin:.6em 0;max-width:68ch}
+a{color:var(--red)}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+header.top{padding-top:40px;display:grid;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted)}
+.facts b{color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+nav.toc a{font:500 13px var(--body);color:var(--fg);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:5px 10px;border-radius:4px}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--red);outline:none}
+ul.rules,ol.steps{padding-left:1.3em;margin:.5em 0;display:grid;gap:5px;max-width:74ch}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:12px}
+.swatches div{background:var(--surface);border:1px solid var(--line);min-width:0}
+.swatches i{display:block;height:46px;background:var(--c);border-bottom:1px solid var(--line)}
+.swatches span{display:block;padding:6px 8px;font-size:13px}
+.swatches code{font:12px var(--mono);color:var(--muted)}
+.specimen{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.specimen div{background:var(--sw-ind);padding:14px 18px;font-family:var(--poster);line-height:1;min-width:0}
+.sp-juara{font-size:56px;color:var(--sw-red);-webkit-text-stroke:2px var(--sw-off);text-shadow:4px 4px 0 var(--sw-char)}
+.sp-chant{font-size:34px;color:var(--sw-off);text-shadow:4px 4px 0 var(--sw-red)}
+.sp-verse{font-size:24px;color:var(--sw-off);text-transform:none}
+.sp-verse b{font-weight:400;color:var(--sw-gold)}
+.sp-past{font-size:24px;color:var(--sw-off)}
+.sp-past b{font-weight:400;color:#BFD3E6}
+.pr{margin-top:10px;border:1px solid var(--line);border-left-width:5px;min-width:0}
+.pr.img{background:var(--img-bg);border-color:var(--img-line)}
+.pr.vid{background:var(--vid-bg);border-color:var(--vid-line)}
+.pr.con,.pr.plate{background:var(--con-bg);border-color:var(--con-line)}
+.prh{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 10px 0}
+.prl{font:600 11px/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+pre{margin:0;padding:6px 10px 10px;white-space:pre-wrap;word-break:break-word;font:13px/1.5 var(--mono);color:var(--fg)}
+button.cp{font:600 12px var(--body);background:var(--fg);color:var(--bg);border:0;padding:5px 12px;border-radius:3px;cursor:pointer;flex:none}
+button.cp:hover{background:var(--red);color:#fff}
+button.cp:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+button.cp.ok{background:var(--red);color:#fff}
+.sc{background:var(--surface);border:1px solid var(--line);padding:14px 14px 16px;margin-top:18px;position:relative;scroll-margin-top:12px}
+.sc::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:4px;background:var(--red)}
+.sc.look-past::before{background:var(--past)}
+.sch{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.badge{font:700 22px/1 var(--display);background:var(--fg);color:var(--bg);padding:4px 8px}
+.dur{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.lyr{font:600 16px/1.4 var(--body);margin:10px 0 6px}
+dl.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:4px 16px;margin:0;font-size:13.5px}
+dl.meta dt{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+dl.meta dd{margin:0;font-variant-numeric:tabular-nums}
+.attach{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;margin-top:12px;padding:8px 10px;background:var(--red-soft);border:1px solid var(--red);font-size:13.5px}
+.attach .al{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+details.veo{margin-top:10px}
+details.veo summary{cursor:pointer;font:600 13px var(--body);color:var(--muted)}
+details.veo summary:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.note{font-size:13.5px;color:var(--muted);margin:10px 0 0;padding-left:10px;border-left:2px solid var(--line)}
+.tablewrap{overflow-x:auto;margin-top:12px;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;white-space:nowrap}
+th{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+td.tcell,td.num{font-family:var(--mono)}
+td.wrapcell{white-space:normal;min-width:220px}
+td.cues{min-width:260px;font-size:12.5px}
+.wt{font:12px var(--mono);color:var(--muted)}
+.k{font:600 11px/1 var(--body);letter-spacing:.05em;text-transform:uppercase;padding:3px 6px;border:1px solid var(--line);color:var(--muted)}
+.k-juara,.k-chant{border-color:var(--red);color:var(--red)}
+.k-asia{border-color:var(--gold);color:var(--gold)}
+.k-flashback,.k-bridge{border-color:var(--past);color:var(--past)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Nika Music · Album BANGKIT · Single 1</div>
+  <h1>JUARA! <span>Lyric Video</span></h1>
+  <div class="facts"><span>Length <b>5:57.6</b></span><span>Artworks <b>10</b></span><span>Segments <b>13</b></span><span>Look <b>illustrated poster / mural</b></span><span>Output <b>16:9, 1080p</b></span><span>Timing <b>final LRC, 9 Oct</b></span></div>
+  <nav class="toc" aria-label="Sections">
+    <a href="#direction">Art direction</a><a href="#workflow">Workflow</a><a href="#characters">Characters</a><a href="#artworks">Artworks</a><a href="#timeline">Edit timeline</a><a href="#animation">Lyric animation</a><a href="#timing">Lyric timing</a><a href="#files">Files</a>
+  </nav>
+</header>
+
+<h2 id="direction">Art direction</h2>
+<p>The same father-and-son story as the paused photoreal video, told in ten illustrated posters instead of footage. A stylised world isn't compared with the real final at GBK, and image models keep a flat poster style far more consistent than photoreal crowds and stadiums. The big lyrics do the work; the artworks carry the story under them.</p>
+<p>The look is Indonesian screen-printed poster and street mural: flat shapes, hand-cut edges, halftone and paper grain, one strict palette. The two warung flashback artworks drop to cold blue-grey with the scarf as the only red, the same rule as before.</p>
+<div class="swatches">
+  <div style="--c:var(--sw-red)"><i></i><span>Flag red <code>#C8102E</code></span></div>
+  <div style="--c:var(--sw-off)"><i></i><span>Off-white <code>#F4EFE6</code></span></div>
+  <div style="--c:var(--sw-ind)"><i></i><span>Night indigo <code>#1E2240</code></span></div>
+  <div style="--c:var(--sw-char)"><i></i><span>Charcoal <code>#1A1416</code></span></div>
+  <div style="--c:var(--sw-gold)"><i></i><span>Gold <code>#F2B33D</code></span></div>
+  <div style="--c:var(--sw-blue)"><i></i><span>Flashback blue-grey <code>#8FA3B8</code></span></div>
+</div>
+<h4>Rules</h4>
+<ul class="rules">
+  <li><b>No players at all.</b> The supporters carry the whole video, so no silhouette can point at a real player, and there is no trophy to get wrong.</li>
+  <li><b>No logos anywhere:</b> no PSSI crest, no FIFA/AFC marks, no sponsors. Flags are plain red over white.</li>
+  <li><b>Garuda is a mythical eagle, not the coat of arms:</b> no shield, no emblem, no banner (A1).</li>
+  <li><b>Only two pieces of lettering:</b> INDONESIA on the scarf and 12 on the son's jersey. Check both in every image. The illustrated son wears the plain red jersey with the 12, which settles the open jersey question for this video.</li>
+  <li><b>The scarf travels:</b> in Bapak's hands a year ago (A4), with the son at GBK (A2, A3, A5, A6, A8), around Bapak's neck from A9 to the end. In A7 Bapak has no scarf.</li>
+  <li><b>Screens never face the camera.</b> The warung is always seen from beside the TV.</li>
+  <li><b>Motorbike riders wear helmets</b> (A8).</li>
+  <li><b>Leave room for the words:</b> every prompt keeps the subject in the centre third and a calm band across the lower middle. The centre-third rule also makes 9:16 crops for Shorts work.</li>
+</ul>
+%%STYLE%%
+%%COMPOSE%%
+<h4>Lyric type on the art</h4>
+<div class="specimen" aria-hidden="true">
+  <div class="sp-juara">JUARA!</div>
+  <div class="sp-chant">AYO, AYO, GARUDA!</div>
+  <div class="sp-verse"><b>Syal yang sama</b> kini di tanganku sendiri</div>
+  <div class="sp-past"><b>Setahun lalu,</b> TV di warung itu</div>
+</div>
+
+<h2 id="workflow">Workflow</h2>
+<ol class="steps">
+  <li><b>Character sheet</b> (attach nothing). Regenerate until the son, Bapak and the scarf look right, with INDONESIA spelled correctly.</li>
+  <li><b>A1 with your real GBK photo attached.</b> This is the style anchor: iterate on it until the style is what you want, because every other artwork copies it.</li>
+  <li><b>A2–A10:</b> attach the character sheet first, then A1 as the style reference. For the present-day warung artworks (A7, A9), also attach A4 so the room stays the same.</li>
+  <li><b>Check every image</b> for spelling of INDONESIA, a 12 only on the son, stray text, an emblem on the Garuda, and helmets.</li>
+  <li><b>Upscale every artwork to 3840×2160</b> before editing. The edit zooms up to 140%, and a Gemini-size image goes soft at that scale.</li>
+  <li><b>Optional motion:</b> any artwork can become a Veo clip with its motion prompt (first frame = the artwork). Start with the longest holds: A3 (49s), A8 (43s), A10 (59s). Mute the Veo audio.</li>
+  <li><b>Edit</b> on the Suno track from 0:00.0 using the timeline and lyric spec below. Captions come from <code>lyrics/JUARA_lyric-video.srt</code>.</li>
+</ol>
+
+<h2 id="characters">Characters</h2>
+<p>Shorter than the photoreal lines, since the style simplifies faces. These are already inside the artwork prompts.</p>
+<div class="attach"><span class="al">Attach</span><span><b>nothing</b></span></div>
+%%SHEET%%
+%%CONS%%
+
+<h2 id="artworks">Artworks</h2>
+<p>Ten artworks in story order. Each card lists every stretch of the song it covers. Copy the prompt into Gemini with the listed attachments.</p>
+%%CARDS%%
+
+<h2 id="timeline">Edit timeline</h2>
+<p>Cut points are LRC line starts, rounded to 0.1s. Nudge each cut onto the downbeat just before it by ear (128 bpm, one beat every 0.47s). Hard cuts only. Percentages are scale on a 1920×1080 timeline.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>In – out</th><th>Length</th><th>Artwork</th><th>Song</th><th>Move and effects</th></tr></thead>
+<tbody>
+%%ROWS%%
+</tbody></table></div>
+
+<h2 id="animation">Lyric animation</h2>
+<p>Font: <b>Anton</b> (free on Google Fonts). If your editor doesn't have it, use Bebas Neue or Oswald Bold. On screen, keep the normal spellings (GBK, TV, Ayo) even where the Suno lyrics box used phonetic ones.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Style</th><th>Used for</th><th>Size at 1080p</th><th>Look</th><th>Position</th><th>Animation</th></tr></thead>
+<tbody>
+<tr><td><span class="k k-verse">Verse</span></td><td class="wrapcell">Verse 2, both pre-choruses</td><td class="num">72px</td><td class="wrapcell">Sentence case. Off-white, 6px charcoal outline; karaoke fill turns sung words gold</td><td class="wrapcell">Lower band, centred</td><td class="wrapcell">In: rise 20px + fade 0.25s. Out: fade 0.2s</td></tr>
+<tr><td><span class="k k-flashback">Verse (flashback)</span></td><td class="wrapcell">Verse 1 (1:24.8–1:42.6)</td><td class="num">72px</td><td class="wrapcell">As Verse, but sung words fill pale blue <code>#BFD3E6</code>, never gold</td><td class="wrapcell">Lower band, centred</td><td class="wrapcell">Slower fades, 0.5s</td></tr>
+<tr><td><span class="k k-chant">Chant</span></td><td class="wrapcell">Every "Ayo, ayo, Garuda!"</td><td class="num">150px</td><td class="wrapcell">Caps. Off-white, charcoal outline, hard red shadow 8px down-right</td><td class="wrapcell">Centre</td><td class="wrapcell">Word by word on the LRC times: scale 140→100% in 0.12s. 2-frame shake on GARUDA!</td></tr>
+<tr><td><span class="k k-juara">JUARA</span></td><td class="wrapcell">Every "Juara! Juara!"</td><td class="num">280px</td><td class="wrapcell">Caps. Flag red, 10px off-white outline, hard charcoal shadow</td><td class="wrapcell">Centre, one word at a time</td><td class="wrapcell">Each JUARA! replaces the last: punch 120→100% in 0.15s. 2-frame white flash on the first JUARA! of each chorus</td></tr>
+<tr><td><span class="k">Chorus line</span></td><td class="wrapcell">"Garuda di dada…", "Bilang ke Bapak…"</td><td class="num">110px</td><td class="wrapcell">Off-white, karaoke to gold; "juara!" and "Bapak" are always gold</td><td class="wrapcell">Centre-low</td><td class="wrapcell">In: punch 110→100% in 0.15s. Out: cut on the next JUARA!</td></tr>
+<tr><td><span class="k k-bridge">Bridge</span></td><td class="wrapcell">Female bridge, 4:26.2–4:58.5</td><td class="num">64px</td><td class="wrapcell">Sentence case, letter-spacing +6%, soft glow instead of outline</td><td class="wrapcell">Lower band, centred</td><td class="wrapcell">0.8s fades. No karaoke, no shake</td></tr>
+<tr><td><span class="k k-asia">Asia</span></td><td class="wrapcell">"Asia, kami siap!", "Asia, kami datang!"</td><td class="num">200px</td><td class="wrapcell">Caps. Gold, charcoal outline</td><td class="wrapcell">Centre</td><td class="wrapcell">Word by word on the LRC times; the last line fades out by 5:40</td></tr>
+<tr><td><span class="k">Title</span></td><td class="wrapcell">0:01.0–0:10.0</td><td class="num">320px</td><td class="wrapcell">"JUARA!" as the JUARA style; "NIKA MUSIC" 40px off-white above, tracking +20%</td><td class="wrapcell">Lower-middle, under the eagle</td><td class="wrapcell">Punch in, slow 5% scale-up, fade out 0.5s. No text during the vocalise</td></tr>
+</tbody></table></div>
+<h4>Over the whole video</h4>
+<ul class="rules">
+  <li><b>Paper grain:</b> one grain or paper-texture overlay across the whole video at 10–15% opacity, so the artworks and the text read as one print.</li>
+  <li><b>Rain</b> overlay on both A4 stretches. <b>Confetti or sparks</b> on the chorus stretches. <b>Light flares</b> on floodlights and fireworks.</li>
+  <li><b>Audio:</b> the Suno track only, full volume. No sound effects.</li>
+</ul>
+<h4>Building it in CapCut</h4>
+<ul class="rules">
+  <li>Import <code>lyrics/JUARA_lyric-video.srt</code> as captions. It has one caption per sung line with clean in and out times, and no line hangs over an instrumental.</li>
+  <li>Verse, chorus-line and bridge captions: apply the style above and a karaoke text animation stretched over the caption's length.</li>
+  <li>Chant, JUARA and Asia lines: replace the caption with one text layer per word, placed on the word times in the timing table below.</li>
+  <li>YouTube: upload the same SRT as Indonesian subtitles. The original Suno SRT keeps "Garuda di dada, kita juara!" on screen from 0:33 to 1:24 and holds other lines through instrumentals.</li>
+  <li>Shorts: 2:12.2–2:55.6 (first chorus and chant, 43s) and 4:40.2–5:12.6 (the scarf comes home into the final chorus, 32s) crop to 9:16 cleanly.</li>
+</ul>
+
+<h2 id="timing">Lyric timing</h2>
+<p>%%NCUES%% on-screen lines from the final LRC. Each line comes in 0.2s before its first sung word and goes out 1.0–2.2s after its last word starts, or just before the next line, whichever is first. Word times are listed for the lines built word by word. Spelling fixed from the LRC: "GBK" (LRC: Ge-Be-Ka) and "tiba..." (LRC: "tiba.."). The vocalise has no text.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>#</th><th>In</th><th>Out</th><th>Style</th><th>Text</th><th>Word cues</th></tr></thead>
+<tbody>
+%%LROWS%%
+</tbody></table></div>
+
+<h2 id="files">Files</h2>
+<ul class="rules">
+  <li><code>lyrics/JUARA_lyric-video.srt</code>: on-screen captions and YouTube subtitles (generated).</li>
+  <li><code>lyrics/JUARA_final_suno.lrc</code>, <code>lyrics/JUARA_final_suno.srt</code>: the final Suno exports, unchanged.</li>
+  <li><code>claude/juara-lyric-video/build_lyric_video.py</code>: rebuilds this page and the SRT from the LRC.</li>
+  <li><code>claude/juara-breakdown/</code>: the paused photoreal Scene Breakdown and its sources.</li>
+</ul>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button.cp'); if(!b) return;
+  var el=document.getElementById(b.dataset.t); if(!el) return;
+  var t=el.textContent;
+  function done(){b.textContent='Copied';b.classList.add('ok');setTimeout(function(){b.textContent='Copy';b.classList.remove('ok')},1400)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(x){b.textContent='Selected'}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}
+});
+</script>

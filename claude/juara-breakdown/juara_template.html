@@ -1,0 +1,198 @@
+<title>JUARA! Scene Breakdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a production sheet — one reading column, scene cards stacked on a timecode spine, reference material first, assembly tables last */
+:root{
+  --bg:#F6F4F4; --surface:#FFFFFF; --fg:#1C1617; --muted:#6A5E60; --line:#E3DADB;
+  --red:#C8102E; --red-soft:#F9E3E6;
+  --img-bg:#FFF5D2; --img-line:#E2BE3E; --vid-bg:#FFE8D6; --vid-line:#E98236;
+  --con-bg:#EEF0F2; --con-line:#C9CED4;
+  --past:#4F6C86; --dawn:#C98A1A;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141011; --surface:#1D1819; --fg:#F1EBEB; --muted:#ADA0A2; --line:#352D2E;
+  --red:#FF5468; --red-soft:#3A1B20;
+  --img-bg:#2B2510; --img-line:#8C7420; --vid-bg:#2F1E10; --vid-line:#9A5420;
+  --con-bg:#1F2326; --con-line:#3A4147; --past:#8FB0CC; --dawn:#E8B04A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141011; --surface:#1D1819; --fg:#F1EBEB; --muted:#ADA0A2; --line:#352D2E;
+  --red:#FF5468; --red-soft:#3A1B20;
+  --img-bg:#2B2510; --img-line:#8C7420; --vid-bg:#2F1E10; --vid-line:#9A5420;
+  --con-bg:#1F2326; --con-line:#3A4147; --past:#8FB0CC; --dawn:#E8B04A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--body);padding-inline:16px;padding-block:0 64px}
+.wrap{max-width:860px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.05;margin:0}
+h1{font-size:clamp(44px,9vw,76px);letter-spacing:.01em}
+h1 span{color:var(--red)}
+h2{font-size:34px;margin-top:56px;padding-top:14px;border-top:3px solid var(--fg)}
+h3{font-size:22px;margin-top:28px}
+p{margin:.6em 0;max-width:68ch}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+header.top{padding-top:40px;display:grid;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted)}
+.facts b{color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+nav.toc a{font:500 13px var(--body);color:var(--fg);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:5px 10px;border-radius:4px}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--red);outline:none}
+.style-line{font-family:var(--mono);font-size:13px;background:var(--surface);border-left:4px solid var(--red);padding:10px 12px;margin-top:10px}
+ul.rules{padding-left:1.1em;margin:.5em 0;display:grid;gap:4px}
+.arc{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:12px}
+.arc div{background:var(--surface);border:1px solid var(--line);padding:10px 12px;min-width:0}
+.arc b{display:block;font-family:var(--display);font-size:18px}
+.arc small{color:var(--muted);font-family:var(--mono);font-size:12px}
+.looks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
+.looks div{padding:10px 12px;background:var(--surface);border-top:4px solid var(--c);min-width:0}
+.pr{margin-top:10px;border:1px solid var(--line);border-left-width:5px;min-width:0}
+.pr.img{background:var(--img-bg);border-color:var(--img-line)}
+.pr.vid{background:var(--vid-bg);border-color:var(--vid-line)}
+.pr.con,.pr.plate{background:var(--con-bg);border-color:var(--con-line)}
+.prh{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 10px 0}
+.prl{font:600 11px/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+pre{margin:0;padding:6px 10px 10px;white-space:pre-wrap;word-break:break-word;font:13px/1.5 var(--mono);color:var(--fg)}
+button.cp{font:600 12px var(--body);background:var(--fg);color:var(--bg);border:0;padding:5px 12px;border-radius:3px;cursor:pointer;flex:none}
+button.cp:hover{background:var(--red);color:#fff}
+button.cp:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+button.cp.ok{background:var(--red);color:#fff}
+.sc{background:var(--surface);border:1px solid var(--line);padding:14px 14px 16px;margin-top:18px;position:relative;scroll-margin-top:12px}
+.sc::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:4px;background:var(--red)}
+.sc.look-past::before{background:var(--past)}
+.sc.look-dawn::before{background:var(--dawn)}
+.sch{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.badge{font:700 22px/1 var(--display);background:var(--fg);color:var(--bg);padding:4px 8px}
+.tc{font:500 14px var(--mono);font-variant-numeric:tabular-nums}
+.dur{font:13px var(--mono);color:var(--muted)}
+.tag{font:600 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);color:var(--muted)}
+.tag.pri{background:var(--red);border-color:var(--red);color:#fff}
+.look-past .tag.look{color:var(--past);border-color:var(--past)}
+.look-dawn .tag.look{color:var(--dawn);border-color:var(--dawn)}
+.lyr{font:600 17px/1.4 var(--body);margin:10px 0 6px}
+dl.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:4px 16px;margin:0;font-size:13.5px}
+dl.meta dt{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+dl.meta dd{margin:0}
+.attach{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;margin-top:12px;padding:8px 10px;background:var(--red-soft);border:1px solid var(--red);font-size:13.5px}
+.attach .al{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.note{font-size:13.5px;color:var(--muted);margin:10px 0 0;padding-left:10px;border-left:2px solid var(--line)}
+.tablewrap{overflow-x:auto;margin-top:12px;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+td:nth-child(2),td:nth-child(3){font-family:var(--mono)}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.sum div{background:var(--surface);border:1px solid var(--line);padding:10px 12px}
+.sum b{display:block;font:700 30px/1 var(--display);color:var(--red)}
+.sum span{font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Nika Music · Album BANGKIT · Single 1</div>
+  <h1>JUARA! <span>Scene Breakdown</span></h1>
+  <div class="facts"><span>Length <b>5:57.6</b></span><span>Scenes <b>%%NSC%%</b></span><span>Clips <b>10s Veo, 16:9</b></span><span>Look <b>photoreal cinematic</b></span><span>Source <b>Suno SRT + LRC</b></span></div>
+  <div class="style-line">Arena rock with arena-sized reverb tails; recurring brass, distorted guitar, and angklung riff over orchestral strings, piano, choir, stomp-claps, and taiko; gritty, raspy male baritone-tenor lead with warm operatic mezzo-soprano counter-vocal; driving 128 bpm, singable anthem with a key-change finale</div>
+  <nav class="toc" aria-label="Sections">
+    <a href="#story">Story</a><a href="#rules">Look rules</a><a href="#refs">Reference images</a><a href="#lines">Consistency lines</a><a href="#scenes">Scenes</a><a href="#summary">Summary</a><a href="#table">Speed table</a><a href="#editor">Editor sheet</a>
+  </nav>
+</header>
+
+<h2 id="story">Story</h2>
+<p>A father and son, one red scarf, two places on the same night. A year ago at the neighbourhood warung, they switched off the TV after the World Cup dream ended, and Bapak folded his scarf and said "nanti juga menang". Tonight the son carries that scarf into a packed GBK for the final, while Bapak watches at the same warung with the neighbours. After the win the son rides home and wraps the scarf around his father's neck. The video ends at dawn, looking toward Asia.</p>
+<div class="arc">
+  <div><b>Arrival, anthem</b><small>0:00 – 1:24 · Sc01–08</small></div>
+  <div><b>A year ago (flashback)</b><small>1:24 – 1:42 · Sc09–10</small></div>
+  <div><b>Final seconds, the win</b><small>1:42 – 2:33 · Sc10-A–15</small></div>
+  <div><b>All of Indonesia watching</b><small>2:33 – 2:55 · Sc16–17</small></div>
+  <div><b>The match, from home</b><small>2:55 – 3:42 · Sc18–24</small></div>
+  <div><b>Fireworks, ride home</b><small>3:42 – 4:26 · Sc25–29</small></div>
+  <div><b>The scarf comes home</b><small>4:26 – 4:58 · Sc30–33</small></div>
+  <div><b>Kampung party, dawn</b><small>4:58 – 5:57 · Sc34–41</small></div>
+</div>
+
+<h2 id="rules">Look rules</h2>
+<div class="looks">
+  <div style="--c:var(--red)"><b>Present night</b><br>Warm, saturated, red and white, floodlights. The son wears the plain red jersey.</div>
+  <div style="--c:var(--past)"><b>One year earlier</b><br>Cold blue-grey, heavy rain. The son wears a grey T-shirt. The scarf is the only red.</div>
+  <div style="--c:var(--dawn)"><b>Dawn</b><br>Soft gold light for the last three scenes.</div>
+</div>
+<ul class="rules">
+  <li><b>No real players.</b> Players appear only from behind or as backlit silhouettes, and are never close enough to show a face.</li>
+  <li><b>No logos anywhere:</b> no PSSI crest, no FIFA/AFC marks, no sponsors. The trophy is a generic gold cup.</li>
+  <li><b>Only two pieces of lettering:</b> INDONESIA on the scarf and the number 12 on the son's jersey (12 = the supporters, "pemain ke-12"). Players on the pitch keep plain kits with no names or numbers, so no silhouette points at a real player. Check the spelling of INDONESIA and the 12 in every image.</li>
+  <li><b>The scarf travels:</b> in Bapak's hands in the flashback, around the son's neck at GBK, around Bapak's neck from Sc33 to the end.</li>
+  <li><b>Phones and TVs never show their screens to the camera.</b> The camera sits beside the TV (warung View B) or behind a phone, so we see faces lit by the glow.</li>
+  <li><b>Nobody sings or lip-syncs.</b> Lines are carried by action: the chest thump on "Garuda di dada", the phone on "Bilang ke Bapak", the smile on "Bapak tersenyum".</li>
+  <li><b>Motorbike riders wear helmets.</b></li>
+  <li><b>Reuse earlier first frames as references.</b> A scene that returns to a setup already made (same place, same people) lists that scene's first-frame image under "Also attach". Rawa found this on Sc21, made from the Sc11-A image: it keeps faces, light and the room consistent better than the plates alone.</li>
+  <li><b>Crowds and stadium architecture are the image model's weak spot.</b> Face-on shots of the son in the stands are framed tight on a long lens, so the stadium behind him is a soft red-and-white blur. The stadium itself is shown only in the wide shots that use the GBK plates.</li>
+  <li><b>Veo invents what it cannot see.</b> Big camera moves (rising, tilting up, reveals) make it build new roof or stands. Every video prompt now ends with a lock line (one continuous shot, setting exactly as in the first frame). If a clip still grows new architecture, regenerate with the camera move removed: "the camera holds still".</li>
+  <li>Every image prompt starts with its scene tag. If the image model draws the tag as text, delete it from that prompt and regenerate.</li>
+</ul>
+
+<h2 id="refs">Reference images</h2>
+<p>Make these before any scene. Attach the character sheet and the scene's plate to every first-frame image. If a scene drifts, regenerate with the plate attached first.</p>
+<p><b>For the GBK plates (P1–P6)</b>, also attach a real photo of the stadium as a visual reference: one of your own, or a freely licensed one (Wikimedia Commons has several). The ring roof is what makes it read as GBK; check it on every plate before you use it. Generate P1 first, then the other GBK views with P1 attached ("the same stadium as the attached image, seen from …").</p>
+%%CHARSHEET%%
+%%PLATES%%
+
+<h2 id="lines">Consistency lines</h2>
+<p>These are pasted verbatim inside the scene prompts already. They're here for regenerations and new prompts.</p>
+<h3>Characters and objects</h3>
+%%CONS%%
+<h3>Environments</h3>
+%%ENVS%%
+
+<h2 id="scenes">Scenes</h2>
+<p>Cut points come from the LRC (last word + about 0.7s). Splits inside long instrumentals were chosen by time; nudge them onto a beat by ear.</p>
+%%SCENES%%
+
+<h2 id="summary">Production summary</h2>
+<div class="sum">
+  <div><b>%%NSC%%</b><span>clips</span></div>
+  <div><b>%%NTRIM%%</b><span>trimmed (under 9s)</span></div>
+  <div><b>%%NSPEED%%</b><span>speed-adjusted</span></div>
+  <div><b>%%NHOLD%%</b><span>full clip + freeze</span></div>
+</div>
+<ul class="rules">
+  <li><b>Priority clips:</b> %%PRI%%. Generate these first; the first 30 seconds (Sc01–04) decide retention.</li>
+  <li><b>Plates needed:</b> 13 (P1–P13) plus the character sheet and the son back view. The Nusantara montage (Sc16, Sc17, Sc28) is one-off locations with no plate. P3 and P12 are optional now.</li>
+  <li><b>Riskiest clips:</b> Sc07, Sc07-A and Sc18 (players), Sc23 (trophy hands and faces), Sc33 (scarf wrapping is a fine hand action; split into two clips if Veo struggles).</li>
+  <li><b>Song update (9 Oct, "FIX FIX FIX USE THIS" take, 5:57.6):</b> Sc01–15 are already made and only retimed. New clips inside that range are marked <b>-A / -B</b>: Sc07-A and Sc07-B (anthem moment, filling the longer intro), Sc10-A (the full stadium on "GBK penuh lagi"), Sc11-A (Bapak frozen at home on "Detik terakhir"). From Sc16 on the scenes are renumbered. The outro is shorter, so the GBK dawn aerial and the skyline were dropped.</li>
+  <li><b>Long instrumentals:</b> 0:35.7–1:24.8 (Sc06–08), 2:33.9–2:55.6 (Sc16–17), 3:49–4:26 (Sc26–29) and the outro 5:39–5:57.6 (Sc40–41) carry the story without lyrics, so every one has motion and a story beat.</li>
+</ul>
+
+<h2 id="table">Speed, trim &amp; hold table</h2>
+<p>Speed = 10s clip ÷ segment length. Under 9s: trim from the start at 1.0×. Over 11.1s: full clip at 1.0× then freeze the last frame.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Sc</th><th>Timeline in – out</th><th>Length</th><th>Action</th><th>Setting</th><th>Cut point from</th></tr></thead>
+<tbody>
+%%ROWS%%
+</tbody></table></div>
+
+<h2 id="editor">Editor sheet</h2>
+<ul class="rules">
+  <li><b>Audio:</b> Suno track from 0:00.0 at full volume, the only music. Veo ambience under it, speed-matched per clip, with a limiter. Mute any clip where Veo added music or voices.</li>
+  <li><b>Captions:</b> karaoke word highlight from the LRC. Suggested style at 1080p: Barlow Condensed Bold, 76px, unsung words white, sung words gold, black outline 5px, bottom centre. Keep the normal spellings on screen ("GBK", "TV", "Ayo"), even where the Suno lyrics used phonetic ones.</li>
+  <li><b>Title:</b> "JUARA!" over the top third of Sc01, out by 0:06.</li>
+  <li><b>Cuts:</b> hard cuts only. The cut from Sc08 into the flashback (Sc09) and back out (Sc10 → Sc10-A) carries the time jump; the grade change does the rest.</li>
+  <li><b>Freezes:</b> Sc12, +1.6s on its last frame.</li>
+  <li><b>End card:</b> 5:47.5–5:57.6 on Sc41, right third kept clear in the prompt.</li>
+  <li><b>YouTube:</b> upload the SRT as subtitles.</li>
+</ul>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button.cp'); if(!b) return;
+  var el=document.getElementById(b.dataset.t); if(!el) return;
+  var t=el.textContent;
+  function done(){b.textContent='Copied';b.classList.add('ok');setTimeout(function(){b.textContent='Copy';b.classList.remove('ok')},1400)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(x){b.textContent='Selected'}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}
+});
+</script>
