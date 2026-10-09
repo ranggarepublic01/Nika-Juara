@@ -75,8 +75,9 @@ STYLE = ("Bold Indonesian screen-printed poster and hand-painted street-mural il
  "people drawn with simplified but expressive faces. Not photorealistic, not a 3D render, not anime. Landscape 16:9. "
  "Do not draw any words, titles, lyrics, numbers, logos, crests, badges, emblems, watermarks or captions; the only lettering "
  "allowed is the word INDONESIA on the scarf and the number 12 on the son's jersey.")
-COMPOSE = ("Keep the main subject inside the centre third of the width. Keep a calm, darker band across the lower middle of the "
- "frame (from about 55% to 85% of the height) with no faces or important detail, for big lyric text.")
+COMPOSE = ("Keep the main subject inside the centre third of the width. Keep the lower middle of the picture simple and uncluttered "
+ "(floor, ground, shadow or plain wall) with no faces or important detail there, so text can be added later in editing. "
+ "Do not draw any band, bar, box, panel, gradient or overlay on top of the picture.")
 
 L = {
  "SON": "the son: an Indonesian man about 28 years old, slim athletic build, warm brown skin, short black hair cut close at the sides, clean-shaven, a small dark mole on his right cheek, wearing a bright red replica Indonesia home supporter jersey with fine darker-red horizontal pinstripes, raglan sleeves, a white ribbed V-neck collar and white ribbed sleeve cuffs, and white horizontal brush-stroke streaks of different lengths sweeping across the front from below the chest down to the hem; a white number 12 in the centre of the chest above the streaks and a large white number 12 on the plain red back; no crest, no badge, no maker's logo and no other text; and black jeans",
@@ -145,7 +146,7 @@ ART = [
   "", "Confetti falls and fireworks burst in the sky; the scarf swings. The camera holds still.",
   "First chorus. The chest thump sits on \"Garuda di dada\"."),
  ("A7", "The warung erupts", ["BAPAK", "NEIGH"], "Character sheet + A1 + A4",
-  "Match the warung's layout to the attached A4 image (the same warung, now on a dry night in warm light; ignore A4's cold blue colours). Night inside the same warung kopi, the camera at the back wall beside the TV, looking out toward the open front and the dry street: {BAPAK} and {NEIGH} leap up in front of the wooden benches with both arms in the air, faces lit by the TV's glow from the left of the frame, eyes on the TV just beside the camera; Bapak laughs with his glasses slipping down his nose; a red plastic stool tips over; coffee glasses on the counter on the left. Warm fluorescent light under the blue tarpaulin awning, motorbikes parked at the street edge. Bapak has no scarf: his son has it at the stadium.",
+  "Match the warung's layout to the attached A4 image (the same warung, now on a dry night in warm light; ignore A4's cold blue colours). Night inside the same warung kopi, the camera at the back wall beside the TV, looking out toward the open front and the dry street: {BAPAK} and {NEIGH} leap up in front of the wooden benches with both arms in the air, faces lit by the TV's glow from the left of the frame, eyes on the TV just beside the camera; Bapak laughs with his glasses slipping down his nose; a red plastic stool tips over; coffee glasses on the counter on the left. Warm fluorescent light under the blue tarpaulin awning, motorbikes parked at the street edge. Bapak has no scarf: his son has it at the stadium. None of the neighbours wears a grey T-shirt.",
   "Palette for this artwork: warm night, the same limited palette, warm TV glow on the faces.",
   "Everyone jumps and cheers; the stool rocks. The camera holds still.",
   "A4 is attached only for the room layout; A1 sets the style. Covers pre-chorus 2 and chorus 2."),
