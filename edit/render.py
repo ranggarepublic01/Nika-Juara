@@ -170,7 +170,7 @@ def render_still(seg, f0, f1, path):
     vig = make_vignette() if seg.get("vignette") or seg.get("dark") else None
     rains = [rain_layer(s) for s in range(12)] if seg.get("rain") else None
     pap = paper()
-    w0 = min(SW, SH * 16 / 9); h0 = w0 * 9 / 16
+    w0 = min(SW, SH * W / H); h0 = w0 * H / W  # largest crop with the output aspect
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                            "-c:v", "libx264", "-preset", "veryfast", "-crf", "12", "-pix_fmt", "yuv420p", str(path)], stdin=subprocess.PIPE)
     shake_rng = random.Random(11)
