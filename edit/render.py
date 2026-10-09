@@ -287,6 +287,12 @@ def build_ass(path):
     add(2, 1.0, 10.0, "Title", f"{{\\an5\\pos(960,690)\\fad(150,500)\\fscx118\\fscy118\\t(0,180,\\fscx100\\fscy100)\\t(180,9000,\\fscx105\\fscy105)}}JUARA!")
     add(2, 1.0, 10.0, "Verse", f"{{\\an5\\pos(960,470)\\fs64\\fsp12\\bord5\\fad(300,500)}}NIKA MUSIC")
 
+    # end screen message, upper half (the lower half stays free for YouTube end-screen elements)
+    E0, E1 = 342.8, SONG_END - 0.1
+    add(2, E0, E1, "Verse", f"{{\\an5\\pos(960,190)\\fs70\\fsp6\\bord5\\fad(600,400)}}Thank you for watching")
+    add(2, E0 + 0.6, E1, "Title", f"{{\\an5\\pos(960,355)\\fs300\\fad(200,400)\\fscx115\\fscy115\\t(0,200,\\fscx100\\fscy100)}}JUARA!")
+    add(2, E0 + 1.2, E1, "Verse", f"{{\\an5\\pos(960,515)\\fs62\\fsp14\\1c{c(GOLD)}\\bord5\\fad(600,400)}}by NIKA MUSIC")
+
     for n, a, b, k, words in CUES:
         if k in ("verse", "flashback", "chorus"):
             style = "Chorus" if k == "chorus" else "Verse"
