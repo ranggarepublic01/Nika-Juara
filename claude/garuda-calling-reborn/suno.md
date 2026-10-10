@@ -12,7 +12,7 @@ Brief: same lyrics, a brand-new melody, **harder than the original and harder th
   - Exclude styles: the list below.
   - Vocal Gender: **Male**. If the female bridge disappears, unselect it (neither) and rely on the tags.
   - Duration: **Custom ~4:00** if it lets you set a length; otherwise Auto.
-  - Max Mode: Off for the first batch; try On for the final candidates if credits allow (check its info icon for the cost).
+  - Max Mode (more compute for consistency through the whole song, 2x credits): Off while exploring the sound; **On** for the final takes once a direction works. Consistency across a 4-minute song (same voice from verse to final chorus) is exactly what this track needs.
   - Weirdness: **35%** (less random, keeps the structure and the voice).
   - Style Influence: **75%** (sticks closer to the locked style string; this replaces the Persona).
   - Variety: Normal for the first batch; one step lower once a direction works, to get closer variations.
