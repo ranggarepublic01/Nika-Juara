@@ -115,7 +115,7 @@ Garuda calling!
 ```
 
 ## What changed from the original (and why)
-- The words are Rawa's original lyrics. Only one thing is added: the shouted "Garuda calling!" right after the intro, so the hook lands in the first 15 seconds (the album rule) instead of at the first chorus.
+- The words are Rawa's original lyrics. The only addition is the shouted "Garuda calling!": right after the intro, so the hook lands in the first 15 seconds (the album rule), and again as the last words after "CALL!".
 - The lyrics are arranged into intro → verse → pre-chorus → chorus → verse → pre-chorus → chorus → post-chorus → short solo → half-time bridge (female lead) → key-change final chorus → outro. At 140 bpm that lands around 4 minutes, inside the 3:30–4:30 target, with only one short instrumental break.
 - Two lines left as they are, though they could be updated: "When Garuda call" (grammatically "calls") is kept because fans know it that way; "Marching forward to the World Cup call" still works as the 2030 dream after the missed 2026 World Cup.
 
