@@ -18,17 +18,19 @@ Brief: same lyrics, a brand-new melody, **harder than the original and harder th
   - Variety: Normal for the first batch; one step lower once a direction works, to get closer variations.
   - Personalize (My Taste): **Off**, so your listening history doesn't pull the style.
 
-## Style (paste exactly, every take)
+## Variation A: male-led choruses
+
+### Style (paste exactly, every take)
 ```
 Hard-hitting epic stadium metal anthem; down-tuned heavy distorted guitars with palm-muted chugging riffs, double-kick drums and thunderous taiko war drums, booming orchestral brass and strings, huge epic choir, angklung and gamelan accents in the breaks; gritty, raspy male baritone-tenor lead with shouted anthemic belts and gang vocals, warm operatic mezzo-soprano counter-vocal soaring over the choruses; English language vocals; driving 140 bpm, half-time breakdown, key-change final chorus
 ```
 
-## Exclude styles
+### Exclude styles
 ```
 pop, pop punk, EDM, trap, autotune, lo-fi, acoustic ballad, female lead vocal on verses
 ```
 
-## Lyrics (paste into the Lyrics box)
+### Lyrics (paste into the Lyrics box)
 ```
 [Intro: taiko war drums and choir, short, female mezzo vocalise]
 Oh-oh-oh, oh-oh-oh-oh...
@@ -113,6 +115,109 @@ Garuda calling!
 
 [End: crowd roar]
 ```
+
+## Variation B: female-led choruses, duet final chorus
+
+Same words and structure as A. The male voice carries the verses, pre-choruses, bridge and the two signature outro lines; the mezzo-soprano leads every chorus over the heavy band (a symphonic-metal contrast); the final chorus is both voices in harmony. Make takes of both A and B and compare.
+
+Settings as A, except **Vocal Gender: neither** (unselect Male and Female), so the tags decide who sings where. Same Exclude styles, minus the last item:
+
+```
+pop, pop punk, EDM, trap, autotune, lo-fi, acoustic ballad
+```
+
+### Style (paste exactly, every take)
+```
+Hard-hitting epic symphonic stadium metal anthem; down-tuned heavy distorted guitars with palm-muted chugging riffs, double-kick drums and thunderous taiko war drums, booming orchestral brass and strings, huge epic choir, angklung and gamelan accents in the breaks; gritty, raspy male baritone-tenor on the verses and the spoken outro, powerful soaring operatic mezzo-soprano leading every chorus, both voices in harmony on the final chorus; English language vocals; driving 140 bpm, half-time breakdown, key-change final chorus
+```
+
+### Lyrics
+```
+[Intro: taiko war drums and choir, short, female mezzo vocalise]
+Oh-oh-oh, oh-oh-oh-oh...
+
+[Hook: gang vocals, shouted]
+Garuda calling!
+Garuda calling!
+
+[Verse 1: male lead, low, gritty, rhythmic, palm-muted guitars]
+Chasing dreams across the world so wide,
+Red and white ignite their hearts' desire
+
+[Pre-Chorus: male lead, building, snare roll]
+Now the call rings clear,
+it's our time to rise,
+Time to lift our nation to the skies
+
+[Chorus: female mezzo lead, powerful, soaring, operatic, full choir, double-kick drums]
+When Garuda call, we will answer with pride
+Unite on the field, where our spirits collide
+From lands afar, to our home so grand
+Garuda guides us, with victory at hand.
+
+[Verse 2: male lead, harder, gang vocal answers]
+Dreams are forged in foreign lands so wide,
+Now they shine on our own soil with pride
+
+[Pre-Chorus: male lead, building]
+In Garuda's arms, we unite as one
+Creating history as battles are won.
+
+[Chorus: female mezzo lead, powerful, soaring, operatic, full choir, male backing shouts]
+When Garuda call, we will answer with pride
+Unite on the field, where our spirits collide
+From lands afar, to our home so grand
+Garuda guides us, with victory at hand.
+
+[Post-Chorus: gang vocals and choir, marching]
+When Garuda call, we respond to the sound
+Together we march, on this sacred ground
+From distant shores, to the heart of our land
+Garuda leads us, united we stand
+
+[Instrumental Break: short shredding guitar solo over war drums]
+
+[Bridge: half-time breakdown, male lead, low and powerful, female mezzo echoes]
+Feel the roar, the anthem of our land
+Names rise high, beneath the stars we stand
+Garuda's strength, unbroken and bold
+With unyielding hearts, we'll never fold
+
+[Build-Up: taiko and double-kick drums rising, choir swell]
+
+[Final Chorus: key change up, male and female duet in harmony, full choir, crowd]
+When Garuda call, we rise with the dawn
+Side by side, our legacy is drawn
+From every corner, to where we belong
+Garuda in our blood, we'll never fold
+
+[Outro: gang vocals and full choir, anthemic]
+Garuda calling, sacred and bold
+Bringing glory, as the story unfolds
+Wherever we roam, red and white we'll wear
+
+[Break: band drops out, only low war drums, male lead half-spoken like a motivational speaker, slow, deliberate pauses]
+Garuda calling, for Indonesia we...
+de...
+clare!
+
+[Full band hit]
+For Garuda, we give our all,
+
+[Stop-time: band cuts out, one heavy snare hit after each word]
+Marching forward to the
+World...
+Cup...
+CALL!
+
+[Outro: full band and choir, gang vocals shouting the hook]
+Garuda calling!
+Garuda calling!
+
+[End: crowd roar]
+```
+
+What to listen for in B: the switch to the female voice should hit on the first word of each chorus ("When Garuda call"), not drift in halfway; the male voice must stay the same singer as in the verses; on the final chorus you should hear two clear lines in harmony, not one voice doubled. If the chorus switch works but the final duet doesn't, use Replace Section on the final chorus only.
 
 ## What changed from the original (and why)
 - The words are Rawa's original lyrics. The only addition is the shouted "Garuda calling!": right after the intro, so the hook lands in the first 15 seconds (the album rule), and again as the last words after "CALL!".
