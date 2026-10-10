@@ -92,11 +92,24 @@ Garuda in our blood, we'll never fold
 Garuda calling, sacred and bold
 Bringing glory, as the story unfolds
 Wherever we roam, red and white we'll wear
-Garuda calling, for Indonesia we declare
 
-[Outro: male lead, shouted, drums only then full band hit]
+[Break: band drops out, only low war drums, male lead half-spoken like a motivational speaker, slow, deliberate pauses]
+Garuda calling, for Indonesia we...
+de...
+clare!
+
+[Full band hit]
 For Garuda, we give our all,
-Marching forward to the World Cup call!
+
+[Stop-time: band cuts out, one heavy snare hit after each word]
+Marching forward to the
+World...
+Cup...
+CALL!
+
+[Outro: full band and choir, gang vocals shouting the hook]
+Garuda calling!
+Garuda calling!
 
 [End: crowd roar]
 ```
@@ -105,6 +118,18 @@ Marching forward to the World Cup call!
 - The words are Rawa's original lyrics. Only one thing is added: the shouted "Garuda calling!" right after the intro, so the hook lands in the first 15 seconds (the album rule) instead of at the first chorus.
 - The lyrics are arranged into intro → verse → pre-chorus → chorus → verse → pre-chorus → chorus → post-chorus → short solo → half-time bridge (female lead) → key-change final chorus → outro. At 140 bpm that lands around 4 minutes, inside the 3:30–4:30 target, with only one short instrumental break.
 - Two lines left as they are, though they could be updated: "When Garuda call" (grammatically "calls") is kept because fans know it that way; "Marching forward to the World Cup call" still works as the 2030 dream after the missed 2026 World Cup.
+
+## The two signature lines (from the original)
+In the original video these two lines carried the song, and they are the reason Rawa picked that take:
+- "Garuda calling, for Indonesia we **de… clare**": delivered like a motivational speaker, with pauses inside "declare".
+- "Marching forward to the **World… Cup… Call**": a pause with a heavy snare hit after each word, then the hook.
+
+Back then this was luck. Now the lyrics box shapes it: the line breaks inside "de... / clare!" and "World... / Cup... / CALL!" make the pauses, and the [Break] and [Stop-time] tags tell Suno to drop the band and hit the snare. The hook after "CALL!" is the gang-shouted "Garuda calling!", because asking Suno to play a melody on instruments didn't work on JUARA!.
+
+It may still take several tries. The cheap way:
+1. Pick the take with the best overall song first (voice, riffs, chorus).
+2. Then use **Replace Section** on the last ~40 seconds only (from "Garuda calling, for Indonesia we...") and regenerate just that part until both lines land. Keep the same lyrics and tags in the replace box.
+3. Listen to the old video right before judging: the new take should give the same shiver, not copy it note for note.
 
 ## How to judge the takes
 - Hook: "Garuda calling!" lands by ~0:15 and the first chorus by ~1:00.
