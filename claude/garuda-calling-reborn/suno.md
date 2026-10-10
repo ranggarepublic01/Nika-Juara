@@ -320,6 +320,111 @@ CALL!!
 
 Length: at 72 bpm these lyrics run long (likely 5–6 minutes, over the 3:30–4:30 target). Try Duration: Custom ~4:30 first. If Suno rushes or cuts sections, the Post-Chorus is the first block to drop.
 
+## Variation D: power ballad with a children's choir
+
+Variation C plus a children's choir: the song is for the young blood, the future Timnas players. The children open the song with "Garuda calling!", carry the Post-Chorus (the "we respond" answer), echo in the bridge, join the final chorus, and close the song after "CALL!!". Same words as C; settings as C (Vocal Gender: neither).
+
+### Style
+```
+Slow epic rock and metal power ballad; clean arpeggiated electric guitar and grand piano, warm strings, deep taiko heartbeat drums, heavy distorted guitars only on the choruses and the finale, soaring lead guitar solo; gritty, raspy male baritone-tenor on the verses and the spoken outro, powerful soaring operatic mezzo-soprano leading every chorus, bright innocent children's choir answering the choruses and closing the song, both lead voices in harmony on the final chorus; English language vocals; slow 72 bpm, building from quiet to huge, key-change final chorus
+```
+
+### Exclude styles
+```
+pop, EDM, trap, autotune, lo-fi, fast tempo, thrash, double-kick blast beats
+```
+
+### Lyrics
+```
+[Intro: slow, soft piano and music box, distant taiko heartbeat, children's choir humming]
+Oh-oh-oh, oh-oh-oh-oh...
+
+[Hook: children's choir, slow, pure and innocent]
+Garuda calling!
+Garuda calling!
+
+[Verse 1: male lead, low, warm, gritty, gentle clean guitar]
+Chasing dreams across the world so wide,
+Red and white ignite their hearts' desire
+
+[Pre-Chorus: male lead, slowly building, strings rising]
+Now the call rings clear,
+it's our time to rise,
+Time to lift our nation to the skies
+
+[Chorus: female mezzo lead, slow and soaring, operatic, heavy guitars enter, choir]
+When Garuda call, we will answer with pride
+Unite on the field, where our spirits collide
+From lands afar, to our home so grand
+Garuda guides us, with victory at hand.
+
+[Verse 2: male lead, quiet again, piano and clean guitar]
+Dreams are forged in foreign lands so wide,
+Now they shine on our own soil with pride
+
+[Pre-Chorus: male lead, building]
+In Garuda's arms, we unite as one
+Creating history as battles are won.
+
+[Chorus: female mezzo lead, slow and soaring, operatic, full band, choir]
+When Garuda call, we will answer with pride
+Unite on the field, where our spirits collide
+From lands afar, to our home so grand
+Garuda guides us, with victory at hand.
+
+[Post-Chorus: children's choir, bright and hopeful, band softens]
+When Garuda call, we respond to the sound
+Together we march, on this sacred ground
+From distant shores, to the heart of our land
+Garuda leads us, united we stand
+
+[Instrumental Break: short, slow, emotional lead guitar solo over strings]
+
+[Bridge: quiet, piano and strings only, male lead low and tender, children's choir echoes softly]
+Feel the roar, the anthem of our land
+Names rise high, beneath the stars we stand
+Garuda's strength, unbroken and bold
+With unyielding hearts, we'll never fold
+
+[Build-Up: slow taiko heartbeat rising, children's choir and adult choir swell together]
+
+[Final Chorus: key change up, slow and huge, male and female duet in harmony, children's choir above, full band]
+When Garuda call, we rise with the dawn
+Side by side, our legacy is drawn
+From every corner, to where we belong
+Garuda in our blood, we'll never fold
+
+[Outro: full choir with children's choir, slow, anthemic]
+Garuda calling, sacred and bold
+Bring the whole stand down when the final flag's unfurled
+Wherever we roam, red and white we wear
+
+[Break: band drops out, soft piano and low taiko only, male lead half-spoken like a motivational speaker, slow, deliberate pauses]
+Garuda calling, for Indonesia we...
+de...
+clare!!
+
+[Full band hit, slow]
+For Garuda, we give our all,
+one last roar,
+
+[Stop-time: band cuts out, one heavy snare hit after each word]
+Marching forward,
+to the World...
+Cup...
+CALL!!
+
+[Outro: children's choir alone, soft, then fading]
+Garuda calling!
+Garuda calling!
+
+[End: final piano note]
+```
+
+What to listen for: children's voices that sound like a real school choir (clear, in tune, a group, not one child); if they come out thin or strange, regenerate or use Replace Section on that block. The ending changes meaning: after the adults' "CALL!!", the children answer "Garuda calling!" alone — the next generation picking up the call.
+
+For the lyric video later: children playing football in the kampung alley and on a dusty field, a child in an oversized red jersey; the son and Bapak watching them (story thread).
+
 ## What changed from the original (and why)
 - The words are Rawa's original lyrics. The only addition is the shouted "Garuda calling!": right after the intro, so the hook lands in the first 15 seconds (the album rule), and again as the last words after "CALL!".
 - The lyrics are arranged into intro → verse → pre-chorus → chorus → verse → pre-chorus → chorus → post-chorus → short solo → half-time bridge (female lead) → key-change final chorus → outro. At 140 bpm that lands around 4 minutes, inside the 3:30–4:30 target, with only one short instrumental break.
