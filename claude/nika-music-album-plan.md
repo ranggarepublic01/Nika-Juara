@@ -4,7 +4,7 @@
 
 ## Status
 - **Published:** #5 JUARA! (10 Oct 2026, 14:00 WIB), illustrated lyric video + 6 Shorts (YouTube Shorts and TikTok, 10–15 Oct).
-- **Next:** #4 Garuda Calling: Reborn (target Sat 24 Oct). Waiting on: the original lyrics from Rawa.
+- **Next:** #4 Garuda Calling: Reborn (target Sat 24 Oct). Suno package ready: `claude/garuda-calling-reborn/suno.md` (harder, stadium-metal sound).
 - **YPP gap:** 4,000 public watch hours in 12 months ≈ 160k long-form views at ~1:31. Shorts views don't count toward watch hours; they feed the long videos.
 
 ## Context
@@ -67,7 +67,7 @@ Rhythm: one song every two weeks until December, then weekly. Each song also get
   Arena rock with arena-sized reverb tails; recurring brass, distorted guitar, and angklung riff over orchestral strings, piano, choir, stomp-claps, and taiko; gritty, raspy male baritone-tenor lead with warm operatic mezzo-soprano counter-vocal; driving 128 bpm, singable anthem with a key-change finale
   ```
   Per track, change only the tempo and the mood words (e.g. ballad: "slow 72 bpm, piano and strings lead, mezzo-soprano lead vocal").
-- Persona: build the male Persona from JUARA! (a Pro song), never from free-plan Garuda Calling. Still open: does Suno allow making a Persona from a song now? Fallback: the locked style string above on every track.
+- No Persona (not available in Rawa's Suno, checked 10 Oct): the vocal is locked by pasting the same style string on every track; only the tempo and mood words change.
 - Garuda Calling: Reborn = same lyrics, fresh Pro generation (no Cover, Remaster or Inspo of the free-plan song). It will have a new melody: the "Reborn" title frames that.
 
 ## Song production rules (learned on JUARA!)
@@ -95,8 +95,6 @@ Rhythm: one song every two weeks until December, then weekly. Each song also get
 6. Stats check after 48 hours and after 7 days (views, average view duration, CTR, Shorts views) to adjust the next song.
 
 ## Open questions
-- Garuda Calling: the original English lyrics (and an Indonesian version, if one exists).
-- Persona from JUARA!: possible in Suno or not?
 - JUARA! numbers after 48 hours and 7 days.
 
 ## Changes in this revision (10 Oct)
