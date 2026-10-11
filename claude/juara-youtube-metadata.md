@@ -27,7 +27,7 @@ JUARA! 🇮🇩 Lagu suporter untuk Timnas Indonesia, juara Piala ASEAN 2026 set
 
 Setahun lalu, TV di warung kita matikan pelan. Bapak melipat syal merahnya dan bilang, "Nanti juga menang." Malam ini syal yang sama kembali ke GBK, dan kita pulang membawa cerita. Bilang ke Bapak: kita juara!
 
-Single pertama dari album "BANGKIT" oleh Nika Music, dari jatuh, bangkit, juara, sampai Piala Asia 2027.
+Single pertama dari album "COMEBACK" oleh Nika Music, dari jatuh, bangkit, juara, sampai Piala Asia 2027.
 A supporters' anthem for Indonesia, ASEAN champions 2026.
 
 🔔 Subscribe dan nyalakan lonceng untuk lagu-lagu Timnas berikutnya menuju Piala Asia 2027.
@@ -120,7 +120,7 @@ The first three hashtags (#Juara #TimnasIndonesia #GarudaDiDada) appear above th
 ## Tags (422 / 500 characters)
 
 ```
-juara,juara nika music,lagu timnas indonesia,lagu suporter indonesia,garuda di dada,ayo ayo garuda,timnas indonesia juara,indonesia juara piala asean,piala asean 2026,asean cup 2026,fifa asean cup 2026,piala aff 2026,indonesia vs thailand,final gbk,lagu bola indonesia,chant suporter timnas,lagu semangat timnas,lirik lagu juara,video lirik timnas,piala asia 2027,afc asian cup 2027,nika music,garuda calling,album bangkit
+juara,juara nika music,lagu timnas indonesia,lagu suporter indonesia,garuda di dada,ayo ayo garuda,timnas indonesia juara,indonesia juara piala asean,piala asean 2026,asean cup 2026,fifa asean cup 2026,piala aff 2026,indonesia vs thailand,final gbk,lagu bola indonesia,chant suporter timnas,lagu semangat timnas,lirik lagu juara,video lirik timnas,piala asia 2027,afc asian cup 2027,nika music,garuda calling,album comeback
 ```
 
 ## Upload settings

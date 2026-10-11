@@ -1,6 +1,6 @@
 # Garuda Calling: Reborn – Suno package (English version)
 
-Track 4 of BANGKIT. Target release Sat 24 Oct 2026. Original lyrics: `garuda-calling-original-lyrics.txt` (Rawa's, from a fan's comment).
+Track 4 of the album COMEBACK. Target release Sat 24 Oct 2026. Original lyrics: `garuda-calling-original-lyrics.txt` (Rawa's, from a fan's comment).
 
 Brief: same lyrics, a brand-new melody, **harder than the original and harder than JUARA!**. No Persona (Suno doesn't offer it here), so the vocal is locked by pasting the exact same style string every time.
 
@@ -449,6 +449,46 @@ It may still take several tries. The cheap way:
 - "Garuda" sung clearly as ga-RU-da. If Suno stresses it wrong, write it as "Ga-ru-da" in the lyrics box for that section only.
 - Fix single weak sections with Replace Section.
 - Export MP3 + SRT + LRC (word timings) of the chosen take.
+
+## Final candidate (10 Oct): "Reborn v4", child-choir outro
+
+Variation D direction, 5:04. Style as Suno rewrote it:
+```
+Slow epic rock and metal power ballad at 72 bpm, building from a hushed taiko heartbeat to a huge finale; gritty raspy male baritone-tenor verses and spoken outro, soaring operatic mezzo-soprano choruses, bright children's choir, final duet harmony; sustained guitar feedback, warm strings and wide swelling production; clean arpeggiated electric guitar
+```
+
+### Outro rework (Replace Section)
+Select from "Garuda calling, sacred and bold" to the end and replace with the lyrics below. The style line for the replace describes the outro as a sequence, the way Suno's own prompts do:
+```
+Begin with the full band and both choirs at full size, then drop to soft piano and a low taiko heartbeat under a half-spoken male voice with long pauses, then one huge full-band hit, then stop-time with a single heavy snare after each word, then let the children's choir sing alone and softly over a sustained guitar feedback note, and close on one piano note
+```
+```
+[Outro: full band, adult choir and children's choir, slow, huge]
+Garuda calling, sacred and bold
+Bring the whole stand down when the final flag's unfurled
+Wherever we roam, red and white we wear
+
+[Break: band drops out, soft piano and low taiko only, male lead half-spoken like a motivational speaker, slow, deliberate pauses]
+Garuda calling, for Indonesia we...
+de...
+clare!!
+
+[Full band hit, slow]
+For Garuda, we give our all,
+one last roar,
+
+[Stop-time: band cuts out, one heavy snare hit after each word]
+Marching forward,
+to the World...
+Cup...
+CALL!!
+
+[Outro: children's choir alone, soft, over sustained guitar feedback]
+Garuda calling!
+Garuda calling!
+
+[End: final piano note]
+```
 
 ## Next
 - Bahasa Indonesia version (target 31 Oct): a singable Indonesian adaptation written to the melody of the chosen English take, not the literal translation in the original file (that one is for meaning, not for singing).

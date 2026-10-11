@@ -1,10 +1,10 @@
 # Nika Music — Comeback Album Plan (Oct 2026 – Feb 2027)
 
-*Revised 10 Oct 2026, after JUARA! was published. Changes from the 7–9 Oct version are listed at the end.*
+*Revised 10 Oct 2026 after JUARA! was published; updated 11 Oct (album renamed COMEBACK, Garuda Calling: Reborn direction). Changes are listed at the end.*
 
 ## Status
 - **Published:** #5 JUARA! (10 Oct 2026, 14:00 WIB), illustrated lyric video + 6 Shorts (YouTube Shorts and TikTok, 10–15 Oct).
-- **Next:** #4 Garuda Calling: Reborn (target Sat 24 Oct). Suno package ready: `claude/garuda-calling-reborn/suno.md` (harder, stadium-metal sound).
+- **Next:** #4 Garuda Calling: Reborn (target Sat 24 Oct). Final candidate made 10 Oct: "Reborn v4", a slow rock/metal power ballad with a children's choir (variation D in `claude/garuda-calling-reborn/suno.md`), 5:04. The outro still needs rework.
 - **YPP gap:** 4,000 public watch hours in 12 months ≈ 160k long-form views at ~1:31. Shorts views don't count toward watch hours; they feed the long videos.
 
 ## Context
@@ -19,7 +19,7 @@
 - Don't delete the old videos. Old free-plan songs keep monetization off once YPP returns.
 - **Visual look for the whole album (decided 9 Oct): illustrated Indonesian poster / street-mural style**, the one used for JUARA!. The photoreal Veo video was stopped: next to the real final it read as a poor imitation, and Veo struggled with crowds and stadiums. Each song gets an illustrated lyric video (8–10 artworks, Veo motion only on the instrumentals). An animated music video is made only for a song that clearly performs.
 
-## Album: "BANGKIT" — story order
+## Album: "COMEBACK" — story order
 One story runs through the album: **Bapak, his son and the old red INDONESIA scarf**, introduced in JUARA!. Reusing the same characters, warung and style keeps the album recognisable and makes every new video faster (the character sheet, the A1 style anchor and the warung images already exist).
 
 | # | Title | Album role | Story beat (Bapak, son, scarf) | Mood | Status |
@@ -27,7 +27,7 @@ One story runs through the album: **Bapak, his son and the old red INDONESIA sca
 | 1 | Malam yang Sunyi | The fall: missing the World Cup (Oct 2025) | The rainy night at the warung: TV off, Bapak folds the scarf (the night JUARA! looks back on) | slow ballad, female lead | |
 | 2 | Kami Masih di Sini | The supporters who stayed | Bapak hands the folded scarf to his son: "kamu yang berangkat" | warm, mid-tempo | |
 | 3 | Fajar Baru | New coach, new start | Dawn; the son at an open training session, Bapak reading the news at the warung | building, hopeful | |
-| 4 | Garuda Calling: Reborn | The anthem, remade on Pro | The Garuda rising over GBK (A1 world); no story scene needed | epic anthem | **next** |
+| 4 | Garuda Calling: Reborn | The anthem, remade on Pro, handed to the next generation | The Garuda over GBK; kids playing football in the kampung while the son and Bapak watch | power ballad, children's choir | **next** |
 | 5 | JUARA! | ASEAN champions, final vs Thailand | Son at GBK, Bapak at the warung; the scarf comes home | euphoric | **published 10 Oct** |
 | 6 | Satu Suara | One voice, from GBK to the Asian Cup | The kampung and the stands chanting together after the title, eyes on Asia | chant-rock | |
 | 7 | Menantang Raksasa | The road to the Asian Cup | Big shadows of the giants; the scarf against the map of Asia | cinematic, heavy | |
@@ -42,7 +42,7 @@ JUARA! is track 5 (it swapped places with Satu Suara, which now looks ahead to t
 | When | Release | Why then |
 |------|---------|----------|
 | ✅ Sat 10 Oct | #5 JUARA! + 6 Shorts (10–15 Oct) | Win still fresh |
-| Sat 24 Oct | #4 Garuda Calling: Reborn, English, illustrated lyric video | Lyrics already exist, so it's the fastest track to make, and "Garuda Calling" already has search demand (the old video has 194k views but can't be monetized) |
+| Sat 24 Oct | #4 Garuda Calling: Reborn, English power ballad with children's choir, illustrated lyric video | Lyrics already exist, so it's the fastest track to make, and "Garuda Calling" already has search demand (the old video has 194k views but can't be monetized) |
 | Sat 31 Oct | Garuda Calling: Reborn, Bahasa Indonesia version | Same artworks, re-timed: a second video for little extra work |
 | Sat 14 Nov | #6 Satu Suara | Around the November international window, if Indonesia plays |
 | Sat 28 Nov | #2 Kami Masih di Sini | |
@@ -54,7 +54,7 @@ JUARA! is track 5 (it swapped places with Satu Suara, which now looks ahead to t
 | Wed 13 Jan | #9 Badai di Khobar | 3 days before Qatar |
 | Sun 17 Jan | #10 Sekali Lagi | 3 days before Thailand |
 | After Indonesia's last match | #11 Terbang Lebih Tinggi (lyrics adjusted to the result) | |
-| ~1 week after #11 | **BANGKIT – Full Album** (all 11 tracks, one long video, ~45 min) | Long watch time per view is the strongest lever for the 4,000 hours |
+| ~1 week after #11 | **COMEBACK – Full Album** (all 11 tracks, one long video, ~45 min) | Long watch time per view is the strongest lever for the 4,000 hours |
 
 Rhythm: one song every two weeks until December, then weekly. Each song also gets its Shorts set, posted one a day in the week after release.
 
@@ -68,14 +68,23 @@ Rhythm: one song every two weeks until December, then weekly. Each song also get
   ```
   Per track, change only the tempo and the mood words (e.g. ballad: "slow 72 bpm, piano and strings lead, mezzo-soprano lead vocal").
 - No Persona (not available in Rawa's Suno, checked 10 Oct): the vocal is locked by pasting the same style string on every track; only the tempo and mood words change.
-- Garuda Calling: Reborn = same lyrics, fresh Pro generation (no Cover, Remaster or Inspo of the free-plan song). It will have a new melody: the "Reborn" title frames that.
+- Garuda Calling: Reborn = same lyrics (Rawa edited three outro lines on 10 Oct), fresh Pro generation (no Cover, Remaster or Inspo of the free-plan song), new melody. Direction chosen 10 Oct: a slow rock/metal power ballad (male verses, operatic mezzo choruses, duet final chorus, children's choir for the next generation) instead of the planned stadium metal. Its two signature lines are kept as deliveries: "for Indonesia we… de… clare" and "World… Cup… CALL".
+- Ballad style string (from the Reborn v4 take, as Suno rewrote it):
+  ```
+  Slow epic rock and metal power ballad at 72 bpm, building from a hushed taiko heartbeat to a huge finale; gritty raspy male baritone-tenor verses and spoken outro, soaring operatic mezzo-soprano choruses, bright children's choir, final duet harmony; sustained guitar feedback, warm strings and wide swelling production; clean arpeggiated electric guitar
+  ```
 
 ## Song production rules (learned on JUARA!)
-- **Length 3:30–4:30.** JUARA! ran 5:57 with a 49 s instrumental right after the hook (0:35–1:24) and another 32 s break (3:54–4:26); both needed extra Veo clips to keep viewers. Use at most one short instrumental intro (≤15 s) and one break (≤20 s); avoid stacking [Instrumental …] tags.
+- **Length 3:30–4:30** (ballads may run to ~5:00: Reborn v4 is 5:04). JUARA! ran 5:57 with a 49 s instrumental right after the hook (0:35–1:24) and another 32 s break (3:54–4:26); both needed extra Veo clips to keep viewers. Use at most one short instrumental intro (≤15 s) and one break (≤20 s); avoid stacking [Instrumental …] tags.
 - Hook in the first 20 seconds (JUARA!: first chant at 0:22).
 - Forcing the instrumental riff to play the chorus melody did not work in Suno; use normal structure tags.
 - Pronunciation: spell sounds phonetically in the Suno lyrics box and put "Indonesian" in the tag; keep normal spelling on screen and in titles. Abbreviations always as Indonesian letter sounds: GBK → Ge-Be-Ka, PSSI → Pe-Es-Es-I, AFC → A-Ef-Ce, TV → Ti-Vi. "Ayo" at the start of a song or section → Ah-yo.
 - Fix single bad sections with Replace Section instead of rerolling the whole song.
+- **Section tags in the lyrics box beat the style box.** When the style was changed to a ballad, tags like "double-kick drums" and "shredding guitar solo" kept the song fast. Change the tags together with the style.
+- **The style box can describe a sequence**, the way Suno's own expanded prompts do: "begin with…, then weave in…, let the pulse emerge…, gradually thin back to…, close". Use it for the overall arc of a song; use the lyric tags for what happens in each section.
+- Delivery tricks that work in the lyrics box: line breaks inside a word or phrase make pauses ("we… / de… / clare!!"); [Break: band drops out …] and [Stop-time: … one heavy snare hit after each word] shape the band around them; tags in square brackets are not sung.
+- Max Mode (2× credits, more consistency through the whole song): off while exploring, on for final takes.
+- Between takes, Rawa listens to a short neutral "palette cleanser" to reset his ears (a Suno instrumental, "Celesta and Viola", 2:34: avant-garde chamber piece, celesta, viola harmonics, prepared piano, no steady beat).
 - Model: v6 mini on Pro gave the best verse delivery.
 - Export from Suno: the MP3 plus the SRT and LRC with word timings (the LRC drives the karaoke).
 
@@ -96,6 +105,11 @@ Rhythm: one song every two weeks until December, then weekly. Each song also get
 
 ## Open questions
 - JUARA! numbers after 48 hours and 7 days.
+
+## Changes on 11 Oct
+- Album renamed **COMEBACK** (was BANGKIT).
+- Garuda Calling: Reborn goes power ballad with a children's choir (final candidate Reborn v4, 5:04; outro to rework).
+- Production rules: lyric tags beat the style box; the style box can describe a sequence; pause and stop-time tricks; Max Mode; palette cleanser.
 
 ## Changes in this revision (10 Oct)
 - JUARA! published; it is now track 5 and Satu Suara moved to 6, repositioned toward the Asian Cup.

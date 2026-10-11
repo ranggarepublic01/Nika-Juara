@@ -25,7 +25,7 @@ Clips already made (Sc01–Sc23) are not wasted: the intimate ones (Bapak foldin
 - **Nika Music**: Rawa's YouTube channel of Suno songs, on hiatus since 30 May 2025; lost YPP.
 - 2024: "Garuda Calling" (Timnas Indonesia anthem) went viral and got the channel into YPP. Lifetime ~299k views, 3.3k subs; 86.5% Indonesia, 85% male, 25–44. Recommendations + Browse bring ~59% of traffic; 91% of watch time is from non-subscribers.
 - **YPP gap is watch hours**, not subscribers: 4,000 public hours in 12 months ≈ 160k long-form views at ~1:31 average view.
-- **Plan: comeback concept album "BANGKIT"** (fall → rebuild → ASEAN champions → Asian Cup), released as singles through to the AFC Asian Cup 2027 (Group F: Japan 11 Jan, Qatar 16 Jan, Thailand 20 Jan, all 23:00 WIB). Full tracklist and release order are in `claude/nika-music-album-plan.md`.
+- **Plan: comeback concept album "COMEBACK"** (named "BANGKIT" until 11 Oct) (fall → rebuild → ASEAN champions → Asian Cup), released as singles through to the AFC Asian Cup 2027 (Group F: Japan 11 Jan, Qatar 16 Jan, Thailand 20 Jan, all 23:00 WIB). Full tracklist and release order are in `claude/nika-music-album-plan.md`.
 - Indonesia won the FIFA ASEAN Cup 2026 final vs Thailand at GBK on 5 Oct 2026.
 
 ---

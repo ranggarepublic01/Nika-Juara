@@ -177,7 +177,7 @@ def art_prompt(a):
 TL = [
  (0.0, 22.3, "A1", "Title · vocalise", "Veo clips M1 (0:00.0–0:11.1) and M2 (0:11.1–0:22.3). Title card 0:01.0–0:10.0 over M1. If a clip drifts: the still with a push 100→112% toward the eagle's head."),
  (22.3, 35.7, "A2", "Ayo, ayo, Garuda! ×2 · Juara! Juara! · Garuda di dada", "Start at 105% framed on the son. 3% scale pulse on each \"Garuda!\" (0:23.7, 0:27.3) and each \"Juara!\" (0:29.7, 0:31.5); slow upward drift between pulses."),
- (35.7, 84.8, "A3", "(instrumental)", "Veo clips M3–M6, 0:35.7–1:16.0, a cut every ~10s. 1:16.0–1:24.8: the A3 still, push 100→112%, landing on the downbeat into verse 1. Optional credit card \"NIKA MUSIC · BANGKIT\" 0:40–0:48."),
+ (35.7, 84.8, "A3", "(instrumental)", "Veo clips M3–M6, 0:35.7–1:16.0, a cut every ~10s. 1:16.0–1:24.8: the A3 still, push 100→112%, landing on the downbeat into verse 1. Optional credit card \"NIKA MUSIC · COMEBACK\" 0:40–0:48."),
  (84.8, 102.6, "A4", "Verse 1: Setahun lalu … entah kapan tiba", "Hard cut. Rain overlay. Start at 110% on both of them, push to 118% on Bapak's hands and the scarf by \"melipat syal merahnya\" (1:33.4)."),
  (102.6, 132.2, "A5", "Pre-chorus: Senin malam … Lalu meledak", "Push 100→115% until 1:57.0. 1:57.0–2:04.2: hold, vignette up, background softened (tension). On \"meledak\" (2:04.2): 2-frame white flash, jump to 120%, 4-frame shake, sparks/confetti overlay to 2:12.2."),
  (132.2, 146.7, "A6", "Chorus 1", "Punch scale 108→100% on each \"Juara!\" (2:12.2, 2:13.9, 2:19.4, 2:21.2). Confetti overlay, light flare."),
