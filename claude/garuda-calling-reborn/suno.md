@@ -450,6 +450,12 @@ It may still take several tries. The cheap way:
 - Fix single weak sections with Replace Section.
 - Export MP3 + SRT + LRC (word timings) of the chosen take.
 
+### Variation D as a sequence style (experiment, 11 Oct)
+The same song described as an arc in the style box, the way Suno writes its own expanded prompts. Use it with the variation D lyrics (the section tags still decide who sings where; this tells Suno how the whole song should grow).
+```
+Slow epic rock and metal power ballad at 72 bpm. Begin hushed: soft piano, a music box and a distant taiko heartbeat while a children's choir hums, then the children sing the call alone. Let a gritty, raspy male baritone-tenor carry the verses over clean arpeggiated guitar, with strings rising into each chorus. On every chorus, heavy distorted guitars enter and a powerful operatic mezzo-soprano soars over a full choir; pull back to piano for the second verse, then let the children's choir answer the chorus, bright and hopeful. After a short, slow, singing guitar solo, drop to piano and strings for a tender bridge, then build on taiko and both choirs into a key change where the male and female voices sing the final chorus in harmony, the children above them. Close with the male voice half-spoken over soft piano with long pauses, one huge full-band hit, stop-time snare hits between single words, then the children's choir alone and soft over sustained guitar feedback, ending on one piano note. Wide, swelling production; English vocals
+```
+
 ## Final candidate (10 Oct): "Reborn v4", child-choir outro
 
 Variation D direction, 5:04. Style as Suno rewrote it:
